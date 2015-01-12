@@ -10,11 +10,26 @@ define( function( require ) {
 
   // modules
   var Bounds2 = require( 'DOT/Bounds2' );
+  var HTMLText = require( 'SCENERY/nodes/HTMLText' );
   var inherit = require( 'PHET_CORE/inherit' );
+  var LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
+  var MultiLineText = require( 'SCENERY_PHET/MultiLineText' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
   var ScreenView = require( 'JOIST/ScreenView' );
+  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Text = require( 'SCENERY/nodes/Text' );
+
+  // strings
+  var plainString = require( 'string!CHAINS/plainString' );
+  var multilineString = require( 'string!CHAINS/multilineString' );
+  var htmlString = require( 'string!CHAINS/htmlString' );
+  var patternString = require( 'string!CHAINS/patternString' );
+  var sizeString = require( 'string!CHAINS/size' );
+  var nanometersString = require( 'string!CHAINS/nanometers' );
+
+  // constants
+  var FONT = new PhetFont( 36 );
 
   /**
    * @param {ChainsModel} model
@@ -24,9 +39,15 @@ define( function( require ) {
 
     ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 1024, 618 ) } );
 
-    //TODO
-    this.addChild( new Text( 'plain text', {
-      font: new PhetFont( 36 ),
+    this.addChild( new LayoutBox( {
+      align: 'left',
+      spacing: 25,
+      children: [
+        new Text( plainString, { font: FONT, fill: 'green' } ),
+        new MultiLineText( multilineString, { font: FONT, align: 'left' } ),
+        new HTMLText( htmlString, { font: FONT } ),
+        new Text( StringUtils.format( patternString, sizeString, 8, nanometersString ), { font: FONT } )
+      ],
       center: this.layoutBounds.center
     } ) );
 
