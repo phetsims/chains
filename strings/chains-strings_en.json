@@ -4,6 +4,5 @@
   "multilineString": "Give me a\nbreak.",
   "htmlString": "Turning left on <i>red</i> is a <b>bold</b> move.",
   "patternString": "{0}: {1} {2}",
-  "size": "Size",
-  "nanometers": "nm"
+  "size": "Size"
 }

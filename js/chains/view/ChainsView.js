@@ -26,7 +26,7 @@ define( function( require ) {
   var htmlString = require( 'string!CHAINS/htmlString' );
   var patternString = require( 'string!CHAINS/patternString' );
   var sizeString = require( 'string!CHAINS/size' );
-  var nanometersString = require( 'string!CHAINS/nanometers' );
+  var nanometersString = require( 'string!SCENERY_PHET/units_nm' );
 
   // constants
   var FONT = new PhetFont( 36 );
