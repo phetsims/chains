@@ -1,0 +1,20 @@
+{
+  "chains.name": {
+    "value": "Chains"
+  },
+  "plainString": {
+    "value": "It's not easy being green."
+  },
+  "multilineString": {
+    "value": "Give me a\nbreak."
+  },
+  "htmlString": {
+    "value": "Turning left on <i>red</i> is a <b>bold</b> move."
+  },
+  "patternString": {
+    "value": "{0}: {1} {2}"
+  },
+  "size": {
+    "value": "Size"
+  }
+}

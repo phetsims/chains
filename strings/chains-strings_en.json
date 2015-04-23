@@ -1,8 +1,0 @@
-{
-  "chains.name": "Chains",
-  "plainString": "It's not easy being green.",
-  "multilineString": "Give me a\nbreak.",
-  "htmlString": "Turning left on <i>red</i> is a <b>bold</b> move.",
-  "patternString": "{0}: {1} {2}",
-  "size": "Size"
-}
