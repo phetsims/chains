@@ -30,7 +30,9 @@ require.config( {
     SUN: '../../sun/js',
 
     // sim code
-    CHAINS: '.'
+    CHAINS: '.',
+
+    REPOSITORY: '..'
   },
 
   // optional cache buster to make browser refresh load all included scripts, can be disabled with ?cacheBuster=false
