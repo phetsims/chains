@@ -21,3 +21,4 @@ define( function( require ) {
 
   return inherit( PropertySet, ChainsModel );
 } );
+
