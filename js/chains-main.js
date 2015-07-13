@@ -18,7 +18,7 @@ define( function( require ) {
 
   var simOptions = {
     credits: {
-      softwareDevelopment: 'Chris Malley'
+      softwareDevelopment: 'Chris Malley (PixelZoom, Inc.)'
     }
   };
 
