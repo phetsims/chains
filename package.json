@@ -2,11 +2,6 @@
   "name": "chains",
   "version": "1.0.0-dev.1",
   "license": "GPLv3",
-  "requirejsNamespace": "CHAINS",
-  "simTitleStringKey": "CHAINS/chains.name",
-  "phetLibs": [
-    "chains"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/phetsims/chains.git"
@@ -17,5 +12,12 @@
     "grunt-contrib-jshint": "~0.6.4",
     "uglify-js": "~2.4.0",
     "requirejs": "~2.1.8"
+  },
+  "phet": {
+    "requirejsNamespace": "CHAINS",
+    "simTitleStringKey": "CHAINS/chains.name",
+    "phetLibs": [
+      "chains"
+    ]
   }
 }
