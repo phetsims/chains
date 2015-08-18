@@ -15,9 +15,6 @@
   },
   "phet": {
     "requirejsNamespace": "CHAINS",
-    "simTitleStringKey": "CHAINS/chains.name",
-    "phetLibs": [
-      "chains"
-    ]
+    "simTitleStringKey": "CHAINS/chains.name"
   }
 }
