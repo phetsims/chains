@@ -14,7 +14,6 @@
     "requirejs": "~2.1.8"
   },
   "phet": {
-    "requirejsNamespace": "CHAINS",
-    "simTitleStringKey": "CHAINS/chains.name"
+    "requirejsNamespace": "CHAINS"
   }
 }
