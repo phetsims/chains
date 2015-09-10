@@ -16,7 +16,7 @@ define( function( require ) {
   var Screen = require( 'JOIST/Screen' );
 
   // strings
-  var screenTitle = require( 'string!CHAINS/chains.name' );
+  var screenTitle = require( 'string!CHAINS/chains.title' );
 
   /**
    * @constructor

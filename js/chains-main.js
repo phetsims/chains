@@ -12,7 +12,7 @@ define( function( require ) {
   var SimLauncher = require( 'JOIST/SimLauncher' );
 
   // strings
-  var simTitleString = require( 'string!CHAINS/chains.name' );
+  var simTitleString = require( 'string!CHAINS/chains.title' );
 
   var screens = [ new ChainsScreen() ];
 
