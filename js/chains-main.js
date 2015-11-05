@@ -12,7 +12,7 @@ define( function( require ) {
   var SimLauncher = require( 'JOIST/SimLauncher' );
 
   // strings
-  var simTitleString = require( 'string!CHAINS/chains.title' );
+  var chainsTitleString = require( 'string!CHAINS/chains.title' );
 
   var screens = [ new ChainsScreen() ];
 
@@ -23,6 +23,6 @@ define( function( require ) {
   };
 
   SimLauncher.launch( function() {
-    new Sim( simTitleString, screens, simOptions ).start();
+    new Sim( chainsTitleString, screens, simOptions ).start();
   } );
 } );

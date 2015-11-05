@@ -16,7 +16,7 @@ define( function( require ) {
   var Screen = require( 'JOIST/Screen' );
 
   // strings
-  var screenTitle = require( 'string!CHAINS/chains.title' );
+  var chainsTitleString = require( 'string!CHAINS/chains.title' );
 
   /**
    * @constructor
@@ -24,7 +24,7 @@ define( function( require ) {
   function ChainsScreen() {
 
     Screen.call( this,
-      screenTitle,
+      chainsTitleString,
       new Rectangle( 0, 0, 100, 100, { fill: 'white' } ),
       function() { return new ChainsModel(); },
       function( model ) { return new ChainsView( model ); },

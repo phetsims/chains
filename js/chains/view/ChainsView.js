@@ -21,12 +21,12 @@ define( function( require ) {
   var Text = require( 'SCENERY/nodes/Text' );
 
   // strings
-  var plainString = require( 'string!CHAINS/plainString' );
-  var multilineString = require( 'string!CHAINS/multilineString' );
-  var htmlString = require( 'string!CHAINS/htmlString' );
-  var patternString = require( 'string!CHAINS/patternString' );
+  var plainStringString = require( 'string!CHAINS/plainString' );
+  var multilineStringString = require( 'string!CHAINS/multilineString' );
+  var htmlStringString = require( 'string!CHAINS/htmlString' );
+  var patternStringString = require( 'string!CHAINS/patternString' );
   var sizeString = require( 'string!CHAINS/size' );
-  var nanometersString = require( 'string!SCENERY_PHET/units_nm' );
+  var unitsNmString = require( 'string!SCENERY_PHET/units_nm' );
 
   // constants
   var FONT = new PhetFont( 36 );
@@ -43,10 +43,10 @@ define( function( require ) {
       align: 'left',
       spacing: 25,
       children: [
-        new Text( plainString, { font: FONT, fill: 'green' } ),
-        new MultiLineText( multilineString, { font: FONT, align: 'left' } ),
-        new HTMLText( htmlString, { font: FONT } ),
-        new Text( StringUtils.format( patternString, sizeString, 8, nanometersString ), { font: FONT } )
+        new Text( plainStringString, { font: FONT, fill: 'green' } ),
+        new MultiLineText( multilineStringString, { font: FONT, align: 'left' } ),
+        new HTMLText( htmlStringString, { font: FONT } ),
+        new Text( StringUtils.format( patternStringString, sizeString, 8, unitsNmString ), { font: FONT } )
       ],
       center: this.layoutBounds.center
     } ) );
