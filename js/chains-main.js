@@ -14,8 +14,6 @@ define( function( require ) {
   // strings
   var chainsTitleString = require( 'string!CHAINS/chains.title' );
 
-  var screens = [ new ChainsScreen() ];
-
   var simOptions = {
     credits: {
       softwareDevelopment: 'Chris Malley (PixelZoom, Inc.)'
@@ -23,6 +21,6 @@ define( function( require ) {
   };
 
   SimLauncher.launch( function() {
-    new Sim( chainsTitleString, screens, simOptions ).start();
+    new Sim( chainsTitleString, [ new ChainsScreen() ], simOptions ).start();
   } );
 } );
