@@ -9,6 +9,7 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var chains = require( 'CHAINS/chains' );
   var inherit = require( 'PHET_CORE/inherit' );
   var PropertySet = require( 'AXON/PropertySet' );
 
@@ -18,6 +19,8 @@ define( function( require ) {
   function ChainsModel() {
     PropertySet.call( this, {} );
   }
+
+  chains.register( 'ChainsModel', ChainsModel );
 
   return inherit( PropertySet, ChainsModel );
 } );

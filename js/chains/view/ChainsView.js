@@ -10,6 +10,7 @@ define( function( require ) {
 
   // modules
   var Bounds2 = require( 'DOT/Bounds2' );
+  var chains = require( 'CHAINS/chains' );
   var HTMLText = require( 'SCENERY/nodes/HTMLText' );
   var inherit = require( 'PHET_CORE/inherit' );
   var LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
@@ -59,6 +60,8 @@ define( function( require ) {
     } );
     this.addChild( resetAllButton );
   }
+
+  chains.register( 'ChainsView', ChainsView );
 
   return inherit( ScreenView, ChainsView );
 } );

@@ -9,6 +9,7 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var chains = require( 'CHAINS/chains' );
   var ChainsModel = require( 'CHAINS/chains/model/ChainsModel' );
   var ChainsView = require( 'CHAINS/chains/view/ChainsView' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -31,6 +32,8 @@ define( function( require ) {
       { backgroundColor: 'white' }
     );
   }
+
+  chains.register( 'ChainsScreen', ChainsScreen );
 
   return inherit( Screen, ChainsScreen );
 } );
