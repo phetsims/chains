@@ -14,6 +14,7 @@ require.config( {
     image: '../../chipper/js/requirejs-plugins/image',
     mipmap: '../../chipper/js/requirejs-plugins/mipmap',
     string: '../../chipper/js/requirejs-plugins/string',
+    ifphetio: '../../chipper/js/requirejs-plugins/ifphetio',
 
     text: '../../sherpa/lib/text-2.0.12',
 
@@ -26,6 +27,7 @@ require.config( {
     PHETCOMMON: '../../phetcommon/js',
     REPOSITORY: '..',
     PHET_CORE: '../../phet-core/js',
+    PHET_IO: '../../phet-io/js',
     SCENERY: '../../scenery/js',
     SCENERY_PHET: '../../scenery-phet/js',
     SHERPA: '../../sherpa',
