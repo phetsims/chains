@@ -26,7 +26,7 @@ define( function( require ) {
 
     Screen.call( this,
       chainsTitleString,
-      new Rectangle( 0, 0, 100, 100, { fill: 'white' } ),
+      new Rectangle( 0, 0, Screen.HOME_SCREEN_ICON_SIZE.width, Screen.HOME_SCREEN_ICON_SIZE.height, { fill: 'white' } ),
       function() { return new ChainsModel(); },
       function( model ) { return new ChainsView( model ); },
       { backgroundColor: 'white' }
