@@ -13,11 +13,7 @@ define( function( require ) {
   var ChainsModel = require( 'CHAINS/chains/model/ChainsModel' );
   var ChainsView = require( 'CHAINS/chains/view/ChainsView' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var Screen = require( 'JOIST/Screen' );
-
-  // strings
-  var chainsTitleString = require( 'string!CHAINS/chains.title' );
 
   /**
    * @constructor
@@ -25,8 +21,6 @@ define( function( require ) {
   function ChainsScreen() {
 
     Screen.call( this,
-      chainsTitleString,
-      new Rectangle( 0, 0, Screen.HOME_SCREEN_ICON_SIZE.width, Screen.HOME_SCREEN_ICON_SIZE.height, { fill: 'white' } ),
       function() { return new ChainsModel(); },
       function( model ) { return new ChainsView( model ); },
       { backgroundColor: 'white' }
