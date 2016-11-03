@@ -10,7 +10,6 @@ define( function( require ) {
 
   // modules
   var chains = require( 'CHAINS/chains' );
-  var ChainsModel = require( 'CHAINS/chains/model/ChainsModel' );
   var ChainsView = require( 'CHAINS/chains/view/ChainsView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Screen = require( 'JOIST/Screen' );
@@ -21,7 +20,7 @@ define( function( require ) {
   function ChainsScreen() {
 
     Screen.call( this,
-      function() { return new ChainsModel(); },
+      function() { return {}; },
       function( model ) { return new ChainsView( model ); },
       { backgroundColor: 'white' }
     );
