@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.0.0-dev.2 Wed Nov 23 2016 13:14:14 GMT-0700 (Mountain Standard Time)",
+  "comment": "# chains 1.0.0-dev.3 Wed Nov 23 2016 18:10:39 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "47c12d191b9697389f0ad0e9ca7b48e276bfb79f",
     "branch": "master"
@@ -13,7 +13,7 @@
     "branch": "master"
   },
   "chains": {
-    "sha": "d03e226cf5c71728847fb981ef4ecabea926ea86",
+    "sha": "eeb2a9fb8952f512b4c5a478a6aaea322c8bc1e1",
     "branch": "master"
   },
   "chipper": {
@@ -25,7 +25,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "8a5449451b935e6f299fa7b305ddbbafad9d63ed",
+    "sha": "00a570b5e6635518aa1d095cd622e7bb809d68f7",
     "branch": "master"
   },
   "kite": {
@@ -41,11 +41,11 @@
     "branch": "master"
   },
   "query-string-machine": {
-    "sha": "5007fb863bc15231095f7071f5a39f39faaca55b",
+    "sha": "03c9c2e9c6a0f04861441e471c1722348178b468",
     "branch": "master"
   },
   "scenery": {
-    "sha": "a9e4c0ec71108543850e513a5e0057973943efcf",
+    "sha": "4db6e8177bfc27912cd859697bde1db084b2522a",
     "branch": "master"
   },
   "scenery-phet": {
