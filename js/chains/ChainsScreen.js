@@ -13,8 +13,6 @@ define( function( require ) {
   var ChainsView = require( 'CHAINS/chains/view/ChainsView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Screen = require( 'JOIST/Screen' );
-  var Property = require( 'AXON/Property' );
-  var Color = require( 'SCENERY/util/Color' );
 
   /**
    * @constructor
@@ -23,8 +21,7 @@ define( function( require ) {
 
     Screen.call( this,
       function() { return {}; },
-      function( model ) { return new ChainsView( model ); },
-      { backgroundColorProperty: new Property( Color.toColor( 'white' ) ) }
+      function( model ) { return new ChainsView( model ); }
     );
   }
 
