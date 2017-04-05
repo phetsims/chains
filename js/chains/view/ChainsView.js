@@ -11,7 +11,7 @@ define( function( require ) {
   // modules
   var Bounds2 = require( 'DOT/Bounds2' );
   var chains = require( 'CHAINS/chains' );
-  var HTMLText = require( 'SCENERY/nodes/HTMLText' );
+  var RichText = require( 'SCENERY_PHET/RichText' );
   var inherit = require( 'PHET_CORE/inherit' );
   var LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
   var MultiLineText = require( 'SCENERY_PHET/MultiLineText' );
@@ -46,7 +46,7 @@ define( function( require ) {
       children: [
         new Text( plainStringString, { font: FONT, fill: 'green' } ),
         new MultiLineText( multilineStringString, { font: FONT, align: 'left' } ),
-        new HTMLText( htmlStringString, { font: FONT } ),
+        new RichText( htmlStringString, { font: FONT } ),
         new Text( StringUtils.format( patternStringString, sizeString, 8, unitsNmString ), { font: FONT } )
       ],
       center: this.layoutBounds.center
