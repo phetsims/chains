@@ -11,21 +11,21 @@ define( function( require ) {
   // modules
   var Bounds2 = require( 'DOT/Bounds2' );
   var chains = require( 'CHAINS/chains' );
-  var RichText = require( 'SCENERY/nodes/RichText' );
   var inherit = require( 'PHET_CORE/inherit' );
   var LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
   var MultiLineText = require( 'SCENERY_PHET/MultiLineText' );
   var PhetFont = require( 'SCENERY_PHET/PhetFont' );
   var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
+  var RichText = require( 'SCENERY/nodes/RichText' );
   var ScreenView = require( 'JOIST/ScreenView' );
   var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   var Text = require( 'SCENERY/nodes/Text' );
 
   // strings
-  var plainStringString = require( 'string!CHAINS/plainString' );
-  var multilineStringString = require( 'string!CHAINS/multilineString' );
   var htmlStringString = require( 'string!CHAINS/htmlString' );
+  var multilineStringString = require( 'string!CHAINS/multilineString' );
   var patternStringString = require( 'string!CHAINS/patternString' );
+  var plainStringString = require( 'string!CHAINS/plainString' );
   var sizeString = require( 'string!CHAINS/size' );
   var unitsNmString = require( 'string!SCENERY_PHET/units_nm' );
 
