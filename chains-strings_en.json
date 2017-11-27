@@ -14,6 +14,9 @@
   "patternString": {
     "value": "{0}: {1} {2}"
   },
+  "namedPlaceholdersString": {
+    "value": "{{name}} is traveling at {{speed}} km/hr"
+  },
   "size": {
     "value": "Size"
   }

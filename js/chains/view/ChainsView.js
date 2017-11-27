@@ -24,6 +24,7 @@ define( function( require ) {
   // strings
   var htmlStringString = require( 'string!CHAINS/htmlString' );
   var multilineStringString = require( 'string!CHAINS/multilineString' );
+  var namedPlaceholdersStringString = require( 'string!CHAINS/namedPlaceholdersString' );
   var patternStringString = require( 'string!CHAINS/patternString' );
   var plainStringString = require( 'string!CHAINS/plainString' );
   var sizeString = require( 'string!CHAINS/size' );
@@ -47,7 +48,11 @@ define( function( require ) {
         new Text( plainStringString, { font: FONT, fill: 'green' } ),
         new MultiLineText( multilineStringString, { font: FONT, align: 'left' } ),
         new RichText( htmlStringString, { font: FONT } ),
-        new Text( StringUtils.format( patternStringString, sizeString, 8, unitsNmString ), { font: FONT } )
+        new Text( StringUtils.format( patternStringString, sizeString, 8, unitsNmString ), { font: FONT } ),
+        new Text( StringUtils.fillIn( namedPlaceholdersStringString, { name: 'Alice', speed: '100' } ), {
+          font: FONT,
+          fill: '#990000'
+        } )
       ],
       center: this.layoutBounds.center
     } ) );
