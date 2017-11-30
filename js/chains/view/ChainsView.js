@@ -35,23 +35,39 @@ define( function( require ) {
 
   /**
    * @param {ChainsModel} model
+   * @param {Tandem} tandem
    * @constructor
    */
-  function ChainsView( model ) {
+  function ChainsView( model, tandem ) {
 
-    ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 1024, 618 ) } );
+    ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 1024, 618 ), tandem: tandem } );
 
     this.addChild( new LayoutBox( {
       align: 'left',
       spacing: 25,
       children: [
-        new Text( plainStringString, { font: FONT, fill: 'green' } ),
-        new MultiLineText( multilineStringString, { font: FONT, align: 'left' } ),
-        new RichText( htmlStringString, { font: FONT } ),
-        new Text( StringUtils.format( patternStringString, sizeString, 8, unitsNmString ), { font: FONT } ),
+        new Text( plainStringString, {
+          font: FONT,
+          fill: 'green',
+          tandem: tandem.createTandem( 'plainString' )
+        } ),
+        new MultiLineText( multilineStringString, {
+          font: FONT,
+          align: 'left',
+          tandem: tandem.createTandem( 'multiLineString' )
+        } ),
+        new RichText( htmlStringString, {
+          font: FONT,
+          tandem: tandem.createTandem( 'htmlString' )
+        } ),
+        new Text( StringUtils.format( patternStringString, sizeString, 8, unitsNmString ), {
+          font: FONT,
+          tandem: tandem.createTandem( 'patternString' )
+        } ),
         new Text( StringUtils.fillIn( namedPlaceholdersStringString, { name: 'Alice', speed: '100' } ), {
           font: FONT,
-          fill: '#990000'
+          fill: '#990000',
+          tandem: tandem.createTandem( 'namedPlaceholdersString' )
         } )
       ],
       center: this.layoutBounds.center
@@ -60,7 +76,8 @@ define( function( require ) {
     // Reset All button
     var resetAllButton = new ResetAllButton( {
       right: this.layoutBounds.maxX - 10,
-      bottom: this.layoutBounds.maxY - 10
+      bottom: this.layoutBounds.maxY - 10,
+      tandem: tandem.createTandem( 'resetAllButton' )
     } );
     this.addChild( resetAllButton );
   }

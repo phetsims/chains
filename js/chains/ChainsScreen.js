@@ -17,11 +17,12 @@ define( function( require ) {
   /**
    * @constructor
    */
-  function ChainsScreen() {
+  function ChainsScreen( tandem ) {
 
     Screen.call( this,
       function() { return {}; },
-      function( model ) { return new ChainsView( model ); }
+      function( model ) { return new ChainsView( model, tandem.createTandem( 'view' ) ); },
+      { tandem: tandem }
     );
   }
 

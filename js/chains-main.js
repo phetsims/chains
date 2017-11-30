@@ -10,9 +10,12 @@ define( function( require ) {
   var ChainsScreen = require( 'CHAINS/chains/ChainsScreen' );
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
+  var Tandem = require( 'TANDEM/Tandem' );
 
   // strings
   var chainsTitleString = require( 'string!CHAINS/chains.title' );
+
+  var tandem = Tandem.rootTandem;
 
   var simOptions = {
     credits: {
@@ -21,6 +24,6 @@ define( function( require ) {
   };
 
   SimLauncher.launch( function() {
-    new Sim( chainsTitleString, [ new ChainsScreen() ], simOptions ).start();
+    new Sim( chainsTitleString, [ new ChainsScreen( tandem ) ], simOptions ).start();
   } );
 } );
