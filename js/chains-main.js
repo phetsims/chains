@@ -24,6 +24,6 @@ define( function( require ) {
   };
 
   SimLauncher.launch( function() {
-    new Sim( chainsTitleString, [ new ChainsScreen( tandem ) ], simOptions ).start();
+    new Sim( chainsTitleString, [ new ChainsScreen( tandem.createTandem( 'chainsScreen' ) ) ], simOptions ).start();
   } );
 } );
