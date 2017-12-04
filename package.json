@@ -10,6 +10,11 @@
     "grunt": "~1.0.0"
   },
   "phet": {
-    "requirejsNamespace": "CHAINS"
+    "requirejsNamespace": "CHAINS",
+    "runnable": true,
+    "supportedBrands": [
+      "phet"
+    ],
+    "simulation": true
   }
 }
