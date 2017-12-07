@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.7.0-dev.16 Wed Dec 06 2017 17:27:38 GMT-0900 (Alaskan Standard Time)",
+  "comment": "# chains 1.7.0-dev.17 Thu Dec 07 2017 10:20:52 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -13,11 +13,11 @@
     "branch": "master"
   },
   "chains": {
-    "sha": "6aa70a63c8a0681fbdb2e9f802d3695864033df2",
+    "sha": "22683fa4278e43d3967ae5754499ee12fcf10fe7",
     "branch": "master"
   },
   "chipper": {
-    "sha": "3528a970ae9644bf5ba44bec4db8b8233c8da506",
+    "sha": "c28b819f291a55409a538b7bba1a301ffac9272c",
     "branch": "2.0"
   },
   "dot": {
@@ -53,7 +53,7 @@
     "branch": "master"
   },
   "phet-io-wrapper-sonification": {
-    "sha": "b2411d0fb905b73e69076b2176d5ff32736a7ef9",
+    "sha": "cb0c3975fe139f35cf753fcbcd126670f32b1b6b",
     "branch": "master"
   },
   "phet-io-wrappers": {
