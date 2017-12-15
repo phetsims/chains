@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.9.0-dev.1 Fri Dec 15 2017 16:08:33 GMT-0700 (Mountain Standard Time)",
+  "comment": "# chains 1.10.0-dev.1 Fri Dec 15 2017 16:30:16 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -13,7 +13,7 @@
     "branch": "master"
   },
   "chains": {
-    "sha": "c2e76733321864008130866035c14a4827ca3f1c",
+    "sha": "1b3a2463502c9ffea556db710cac8a8ab8363221",
     "branch": "master"
   },
   "chipper": {
@@ -57,8 +57,8 @@
     "branch": "master"
   },
   "phet-io-wrappers": {
-    "sha": "5210d842118f23b7fcfffe9ee63a9348de63d048",
-    "branch": "master"
+    "sha": "bbc168f684c4c309847ce1bcd0acb2e6ff502fd0",
+    "branch": "chipper2.0"
   },
   "phetcommon": {
     "sha": "f0288123d92aefd4c04387fabbed3ebb8ebbfc0a",
