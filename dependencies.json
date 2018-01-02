@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.11.0-dev.10 Tue Jan 02 2018 12:14:33 GMT-0700 (Mountain Standard Time)",
+  "comment": "# chains 1.11.0-dev.11 Tue Jan 02 2018 12:24:30 GMT-0700 (MST)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -13,7 +13,7 @@
     "branch": "master"
   },
   "chains": {
-    "sha": "5b52c4b0e12a1b52831c00f2bb042b84b4a3aa86",
+    "sha": "b819544f4d2311f94ad76cf49ef892530ea068b4",
     "branch": "master"
   },
   "chipper": {
@@ -61,7 +61,7 @@
     "branch": "chipper2.0"
   },
   "phetcommon": {
-    "sha": "eb8717e618ad75a04da9dd80ff3e400209a16f8f",
+    "sha": "cdbd8e1d7bd642ca15d2b49663cba9d17a806f71",
     "branch": "master"
   },
   "query-string-machine": {
