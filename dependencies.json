@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.11.0-dev.12 Tue Jan 02 2018 12:47:08 GMT-0700 (MST)",
+  "comment": "# chains 1.11.0-rc.0 Tue Jan 02 2018 21:06:19 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -13,11 +13,11 @@
     "branch": "master"
   },
   "chains": {
-    "sha": "06496903ce645af55d4849674cb57411d2d7966e",
-    "branch": "master"
+    "sha": "14433309e46d557d9e5c94d64ca14bd71c65f628",
+    "branch": "1.11"
   },
   "chipper": {
-    "sha": "27c914633347c72a918e162fc55aed548548a2fb",
+    "sha": "ede8de630ab9a4fd53c1cc13a79c9854bb9d66c4",
     "branch": "2.0"
   },
   "dot": {
@@ -53,12 +53,12 @@
     "branch": "master"
   },
   "phet-io-wrapper-sonification": {
-    "sha": "cfc90965a4722c5248d6c41b1a060408c1056771",
+    "sha": "33574eb9f44e5322445b82551f67d64faa02b24c",
     "branch": "master"
   },
   "phet-io-wrappers": {
-    "sha": "c864030a896c917bfe68e24ea6a4b676bf892dc2",
-    "branch": "chipper2.0"
+    "sha": "1f30b0975556ff5d6b0d0b31dc8d2dc857743a78",
+    "branch": "master"
   },
   "phetcommon": {
     "sha": "cdbd8e1d7bd642ca15d2b49663cba9d17a806f71",
@@ -69,7 +69,7 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "16ecdee1dc459e46a6817013bfd897e88c8bc764",
+    "sha": "6c0f81a5bef675ba005398e3882086467ea26e9c",
     "branch": "master"
   },
   "scenery-phet": {
