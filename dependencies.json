@@ -57,8 +57,8 @@
     "branch": "HEAD"
   },
   "phet-io-wrappers": {
-    "sha": "1f30b0975556ff5d6b0d0b31dc8d2dc857743a78",
-    "branch": "HEAD"
+    "sha": "c864030a896c917bfe68e24ea6a4b676bf892dc2",
+    "branch": "chipper2.0"
   },
   "phetcommon": {
     "sha": "cdbd8e1d7bd642ca15d2b49663cba9d17a806f71",
