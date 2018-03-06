@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.5.0 Mon Nov 27 2017 15:36:04 GMT-0700 (Mountain Standard Time)",
+  "comment": "# chains 1.5.0 Tue Mar 06 2018 09:01:17 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "chains": {
-    "sha": "d0d310f8086393441119e7aedfeb8f517832262f",
+    "sha": "868cd2d3d7bbfd6ee17805844fc96d45672e4b16",
     "branch": "1.5"
   },
   "chipper": {
@@ -34,30 +34,6 @@
   },
   "phet-core": {
     "sha": "c30d15ed8d869d926ea86fd126e653edea617717",
-    "branch": "HEAD"
-  },
-  "phet-io": {
-    "sha": "34f5bd51696868a12f7aaae99cbbda291182d0e4",
-    "branch": "HEAD"
-  },
-  "phet-io-website": {
-    "sha": "c36910eab70224d4c6d352b702a9da6eb57dce18",
-    "branch": "HEAD"
-  },
-  "phet-io-wrapper-classroom-activity": {
-    "sha": "0ea564c9e3729365b19635800259ca936cdd2a22",
-    "branch": "HEAD"
-  },
-  "phet-io-wrapper-lab-book": {
-    "sha": "e8c9f1d9ff94d67bf9e2682a8a591bbf19699f1d",
-    "branch": "HEAD"
-  },
-  "phet-io-wrapper-sonification": {
-    "sha": "91564c0d4fd00899f3f1431a7992b7ab469124bf",
-    "branch": "HEAD"
-  },
-  "phet-io-wrappers": {
-    "sha": "ba4d9e72cbf6178fb215b2d08087640ccbb99919",
     "branch": "HEAD"
   },
   "phetcommon": {
