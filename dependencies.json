@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.2.12 Thu Mar 08 2018 10:38:52 GMT-0700 (Mountain Standard Time)",
+  "comment": "# chains 1.2.13-rc.1 Thu Mar 08 2018 10:54:31 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "a707328cc11048787a807714496af23e0bd25be1",
     "branch": "HEAD"
@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "chains": {
-    "sha": "217b79a69d29920488c70719317765264804fca7",
+    "sha": "5b4b327e7cf822f2f0bc9120165bb8c051f4969c",
     "branch": "1.2"
   },
   "chipper": {
