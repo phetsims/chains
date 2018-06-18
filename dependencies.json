@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.18.0-dev.1 Mon Jun 18 2018 10:46:31 GMT-0600 (MDT)",
+  "comment": "# chains 1.18.0-dev.2 Mon Jun 18 2018 09:31:52 GMT-0800 (Alaskan Daylight Time)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -13,11 +13,11 @@
     "branch": "master"
   },
   "chains": {
-    "sha": "4a9808a46987b0f6b1f2d6edf79a0e8a2f8d4245",
+    "sha": "d3faa30e3b990dfcfd0b822fe0a3ede3199dec95",
     "branch": "master"
   },
   "chipper": {
-    "sha": "5acde14577d443ab34e23448b51d0a352f7ccf3c",
+    "sha": "7282d06a959df6ed439ee6b08934186f4be00c2c",
     "branch": "master"
   },
   "dot": {
@@ -25,7 +25,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "8417ee3ea84101b80309c96cbad7bcac21cf2929",
+    "sha": "84673ced1998b06647c708251bd8925d54d7cb41",
     "branch": "master"
   },
   "kite": {
@@ -65,8 +65,8 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "4e2515e310843d47d03296275b6aad077b70426e",
-    "branch": "master"
+    "sha": "7273259ebff73c8205fd4c03a0905a10fa4198c8",
+    "branch": "superfluous-container-parent-removal"
   },
   "scenery-phet": {
     "sha": "40fbe8f7797b3dd8f5f4bd42a01dc0ce511a65d0",
@@ -77,7 +77,7 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "15326f5fd9f9d67c72558123f6f8af576611bb17",
+    "sha": "7f53a1b2eda1e8766ba1cf37af260c047674dc0e",
     "branch": "master"
   },
   "tandem": {
