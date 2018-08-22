@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.17.1 Wed Aug 22 2018 10:26:57 GMT-0600 (MDT)",
+  "comment": "# chains 1.17.2-rc.1 Wed Aug 22 2018 10:37:14 GMT-0600 (MDT)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "chains": {
-    "sha": "2c0afd41f9eccdff24de375677740ac2720ad44b",
+    "sha": "fb1d1f25dfdc19333c25fb3d48756782ed96ac61",
     "branch": "1.17"
   },
   "chipper": {
