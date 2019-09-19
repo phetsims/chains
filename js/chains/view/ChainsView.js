@@ -31,7 +31,7 @@ define( require => {
   const unitsNmString = require( 'string!SCENERY_PHET/units_nm' );
 
   // constants
-  var FONT = new PhetFont( 36 );
+  const FONT = new PhetFont( 36 );
 
   /**
    * @param {ChainsModel} model
@@ -74,7 +74,7 @@ define( require => {
     } ) );
 
     // Reset All button
-    var resetAllButton = new ResetAllButton( {
+    const resetAllButton = new ResetAllButton( {
       right: this.layoutBounds.maxX - 10,
       bottom: this.layoutBounds.maxY - 10,
       tandem: tandem.createTandem( 'resetAllButton' )

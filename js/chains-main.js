@@ -15,9 +15,9 @@ define( require => {
   // strings
   const chainsTitleString = require( 'string!CHAINS/chains.title' );
 
-  var tandem = Tandem.rootTandem;
+  const tandem = Tandem.rootTandem;
 
-  var simOptions = {
+  const simOptions = {
     credits: {
       softwareDevelopment: 'Chris Malley (PixelZoom, Inc.)'
     }
