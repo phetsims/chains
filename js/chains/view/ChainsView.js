@@ -5,30 +5,30 @@
  *
  * @author Chris Malley (PixelZoom, Inc.)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var Bounds2 = require( 'DOT/Bounds2' );
-  var chains = require( 'CHAINS/chains' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
-  var MultiLineText = require( 'SCENERY_PHET/MultiLineText' );
-  var PhetFont = require( 'SCENERY_PHET/PhetFont' );
-  var ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
-  var RichText = require( 'SCENERY/nodes/RichText' );
-  var ScreenView = require( 'JOIST/ScreenView' );
-  var StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  var Text = require( 'SCENERY/nodes/Text' );
+  const Bounds2 = require( 'DOT/Bounds2' );
+  const chains = require( 'CHAINS/chains' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const LayoutBox = require( 'SCENERY/nodes/LayoutBox' );
+  const MultiLineText = require( 'SCENERY_PHET/MultiLineText' );
+  const PhetFont = require( 'SCENERY_PHET/PhetFont' );
+  const ResetAllButton = require( 'SCENERY_PHET/buttons/ResetAllButton' );
+  const RichText = require( 'SCENERY/nodes/RichText' );
+  const ScreenView = require( 'JOIST/ScreenView' );
+  const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
+  const Text = require( 'SCENERY/nodes/Text' );
 
   // strings
-  var htmlStringString = require( 'string!CHAINS/htmlString' );
-  var multilineStringString = require( 'string!CHAINS/multilineString' );
-  var namedPlaceholdersStringString = require( 'string!CHAINS/namedPlaceholdersString' );
-  var patternStringString = require( 'string!CHAINS/patternString' );
-  var plainStringString = require( 'string!CHAINS/plainString' );
-  var sizeString = require( 'string!CHAINS/size' );
-  var unitsNmString = require( 'string!SCENERY_PHET/units_nm' );
+  const htmlStringString = require( 'string!CHAINS/htmlString' );
+  const multilineStringString = require( 'string!CHAINS/multilineString' );
+  const namedPlaceholdersStringString = require( 'string!CHAINS/namedPlaceholdersString' );
+  const patternStringString = require( 'string!CHAINS/patternString' );
+  const plainStringString = require( 'string!CHAINS/plainString' );
+  const sizeString = require( 'string!CHAINS/size' );
+  const unitsNmString = require( 'string!SCENERY_PHET/units_nm' );
 
   // constants
   var FONT = new PhetFont( 36 );

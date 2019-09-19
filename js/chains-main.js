@@ -3,17 +3,17 @@
 /**
  * Main entry point for the 'Chains' application.
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var ChainsScreen = require( 'CHAINS/chains/ChainsScreen' );
-  var Sim = require( 'JOIST/Sim' );
-  var SimLauncher = require( 'JOIST/SimLauncher' );
-  var Tandem = require( 'TANDEM/Tandem' );
+  const ChainsScreen = require( 'CHAINS/chains/ChainsScreen' );
+  const Sim = require( 'JOIST/Sim' );
+  const SimLauncher = require( 'JOIST/SimLauncher' );
+  const Tandem = require( 'TANDEM/Tandem' );
 
   // strings
-  var chainsTitleString = require( 'string!CHAINS/chains.title' );
+  const chainsTitleString = require( 'string!CHAINS/chains.title' );
 
   var tandem = Tandem.rootTandem;
 

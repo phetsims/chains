@@ -5,14 +5,14 @@
  *
  * @author Chris Malley (PixelZoom, Inc.)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var chains = require( 'CHAINS/chains' );
-  var ChainsView = require( 'CHAINS/chains/view/ChainsView' );
-  var inherit = require( 'PHET_CORE/inherit' );
-  var Screen = require( 'JOIST/Screen' );
+  const chains = require( 'CHAINS/chains' );
+  const ChainsView = require( 'CHAINS/chains/view/ChainsView' );
+  const inherit = require( 'PHET_CORE/inherit' );
+  const Screen = require( 'JOIST/Screen' );
 
   /**
    * @constructor
