@@ -15,7 +15,7 @@ define( require => {
   // strings
   const chainsTitleString = require( 'string!CHAINS/chains.title' );
 
-  const tandem = Tandem.rootTandem;
+  const tandem = Tandem.ROOT;
 
   const simOptions = {
     credits: {
