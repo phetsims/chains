@@ -19,7 +19,7 @@ define( require => {
 
   const simOptions = {
     credits: {
-      softwareDevelopment: 'Chris Malley (PixelZoom, Inc.)'
+      softwareDevelopment: 'PhET Interactive Simulations'
     }
   };
 
