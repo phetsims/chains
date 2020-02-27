@@ -5,8 +5,6 @@ at the University of Colorado Boulder.
 For a description of this simulation, associated resources, and a link to the published version,
 <a href="https://phet.colorado.edu/en/simulation/chains" target="_blank">visit the simulation's web page</a>.
 
-This is a simulation created primarily for internationalization testing. For more typical PhET simulations, see others.
-
 ### Try it!
 
 <a href="https://phet.colorado.edu/sims/html/chains/latest/chains_en.html" target="_blank">Click here to run "Chains".</a>
