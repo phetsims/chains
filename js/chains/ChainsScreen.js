@@ -5,28 +5,25 @@
  *
  * @author Chris Malley (PixelZoom, Inc.)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const chains = require( 'CHAINS/chains' );
-  const ChainsView = require( 'CHAINS/chains/view/ChainsView' );
-  const inherit = require( 'PHET_CORE/inherit' );
-  const Screen = require( 'JOIST/Screen' );
+import Screen from '../../../joist/js/Screen.js';
+import inherit from '../../../phet-core/js/inherit.js';
+import chains from '../chains.js';
+import ChainsView from './view/ChainsView.js';
 
-  /**
-   * @constructor
-   */
-  function ChainsScreen( tandem ) {
+/**
+ * @constructor
+ */
+function ChainsScreen( tandem ) {
 
-    Screen.call( this,
-      function() { return {}; },
-      function( model ) { return new ChainsView( model, tandem.createTandem( 'view' ) ); },
-      { tandem: tandem }
-    );
-  }
+  Screen.call( this,
+    function() { return {}; },
+    function( model ) { return new ChainsView( model, tandem.createTandem( 'view' ) ); },
+    { tandem: tandem }
+  );
+}
 
-  chains.register( 'ChainsScreen', ChainsScreen );
+chains.register( 'ChainsScreen', ChainsScreen );
 
-  return inherit( Screen, ChainsScreen );
-} );
+inherit( Screen, ChainsScreen );
+export default ChainsScreen;
