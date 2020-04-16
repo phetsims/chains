@@ -7,12 +7,10 @@
 import Sim from '../../joist/js/Sim.js';
 import SimLauncher from '../../joist/js/SimLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
-import chainsStrings from './chainsStrings.js';
 import ChainsScreen from './chains/ChainsScreen.js';
+import chainsStrings from './chainsStrings.js';
 
 const chainsTitleString = chainsStrings.chains.title;
-
-const tandem = Tandem.ROOT;
 
 const simOptions = {
   credits: {
@@ -21,5 +19,5 @@ const simOptions = {
 };
 
 SimLauncher.launch( function() {
-  new Sim( chainsTitleString, [ new ChainsScreen( tandem.createTandem( 'chainsScreen' ) ) ], simOptions ).start();
+  new Sim( chainsTitleString, [ new ChainsScreen( Tandem.ROOT.createTandem( 'chainsScreen' ) ) ], simOptions ).start();
 } );
