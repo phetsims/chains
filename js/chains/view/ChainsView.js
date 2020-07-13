@@ -6,7 +6,6 @@
  * @author Chris Malley (PixelZoom, Inc.)
  */
 
-import Bounds2 from '../../../../dot/js/Bounds2.js';
 import ScreenView from '../../../../joist/js/ScreenView.js';
 import inherit from '../../../../phet-core/js/inherit.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
@@ -17,8 +16,8 @@ import sceneryPhetStrings from '../../../../scenery-phet/js/sceneryPhetStrings.j
 import LayoutBox from '../../../../scenery/js/nodes/LayoutBox.js';
 import RichText from '../../../../scenery/js/nodes/RichText.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
-import chainsStrings from '../../chainsStrings.js';
 import chains from '../../chains.js';
+import chainsStrings from '../../chainsStrings.js';
 
 const htmlStringString = chainsStrings.htmlString;
 const multilineStringString = chainsStrings.multilineString;
@@ -38,7 +37,9 @@ const FONT = new PhetFont( 36 );
  */
 function ChainsView( model, tandem ) {
 
-  ScreenView.call( this, { layoutBounds: new Bounds2( 0, 0, 1024, 618 ), tandem: tandem } );
+  ScreenView.call( this, {
+    tandem: tandem
+  } );
 
   this.addChild( new LayoutBox( {
     align: 'left',
