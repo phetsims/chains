@@ -19,10 +19,7 @@
     ],
     "simulation": true,
     "ignoreForAutomatedMaintenanceReleases": true,
-    "readmeCreatedManually": true,
-    "phet-io": {
-      "validation": true
-    }
+    "readmeCreatedManually": true
   },
   "eslintConfig": {
     "extends": "../chipper/eslint/sim_eslintrc.js"
