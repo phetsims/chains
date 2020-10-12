@@ -7,7 +7,6 @@
  */
 
 import ScreenView from '../../../../joist/js/ScreenView.js';
-import inherit from '../../../../phet-core/js/inherit.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
 import MultiLineText from '../../../../scenery-phet/js/MultiLineText.js';
@@ -30,58 +29,58 @@ const unitsNmString = sceneryPhetStrings.units_nm;
 // constants
 const FONT = new PhetFont( 36 );
 
-/**
- * @param {ChainsModel} model
- * @param {Tandem} tandem
- * @constructor
- */
-function ChainsView( model, tandem ) {
+class ChainsView extends ScreenView {
 
-  ScreenView.call( this, {
-    tandem: tandem
-  } );
+  /**
+   * @param {*} model
+   * @param {Tandem} tandem
+   */
+  constructor( model, tandem ) {
 
-  this.addChild( new LayoutBox( {
-    align: 'left',
-    spacing: 25,
-    children: [
-      new Text( plainStringString, {
-        font: FONT,
-        fill: 'green',
-        tandem: tandem.createTandem( 'plainString' )
-      } ),
-      new MultiLineText( multilineStringString, {
-        font: FONT,
-        align: 'left',
-        tandem: tandem.createTandem( 'multiLineString' )
-      } ),
-      new RichText( htmlStringString, {
-        font: FONT,
-        tandem: tandem.createTandem( 'htmlString' )
-      } ),
-      new Text( StringUtils.format( patternStringString, sizeString, 8, unitsNmString ), {
-        font: FONT,
-        tandem: tandem.createTandem( 'patternString' )
-      } ),
-      new Text( StringUtils.fillIn( namedPlaceholdersStringString, { name: 'Alice', speed: '100' } ), {
-        font: FONT,
-        fill: '#990000',
-        tandem: tandem.createTandem( 'namedPlaceholdersString' )
-      } )
-    ],
-    center: this.layoutBounds.center
-  } ) );
+    super( {
+      tandem: tandem
+    } );
 
-  // Reset All button
-  const resetAllButton = new ResetAllButton( {
-    right: this.layoutBounds.maxX - 10,
-    bottom: this.layoutBounds.maxY - 10,
-    tandem: tandem.createTandem( 'resetAllButton' )
-  } );
-  this.addChild( resetAllButton );
+    this.addChild( new LayoutBox( {
+      align: 'left',
+      spacing: 25,
+      children: [
+        new Text( plainStringString, {
+          font: FONT,
+          fill: 'green',
+          tandem: tandem.createTandem( 'plainString' )
+        } ),
+        new MultiLineText( multilineStringString, {
+          font: FONT,
+          align: 'left',
+          tandem: tandem.createTandem( 'multiLineString' )
+        } ),
+        new RichText( htmlStringString, {
+          font: FONT,
+          tandem: tandem.createTandem( 'htmlString' )
+        } ),
+        new Text( StringUtils.format( patternStringString, sizeString, 8, unitsNmString ), {
+          font: FONT,
+          tandem: tandem.createTandem( 'patternString' )
+        } ),
+        new Text( StringUtils.fillIn( namedPlaceholdersStringString, { name: 'Alice', speed: '100' } ), {
+          font: FONT,
+          fill: '#990000',
+          tandem: tandem.createTandem( 'namedPlaceholdersString' )
+        } )
+      ],
+      center: this.layoutBounds.center
+    } ) );
+
+    // Reset All button
+    const resetAllButton = new ResetAllButton( {
+      right: this.layoutBounds.maxX - 10,
+      bottom: this.layoutBounds.maxY - 10,
+      tandem: tandem.createTandem( 'resetAllButton' )
+    } );
+    this.addChild( resetAllButton );
+  }
 }
 
 chains.register( 'ChainsView', ChainsView );
-
-inherit( ScreenView, ChainsView );
 export default ChainsView;
