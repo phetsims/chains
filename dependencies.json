@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.27.3 Wed Aug 19 2020 15:16:13 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# chains 1.27.4-rc.1 Wed Dec 02 2020 21:44:57 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "a99a9ce9ee0774bf3ef509bf3e31ca7383f67478",
     "branch": "HEAD"
@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "chains": {
-    "sha": "4ba2c5cc7c6b9e792e184380bc23305fa6ece269",
+    "sha": "7600475ee6b5b52640c47a49d947ad91f3ae496e",
     "branch": "1.27"
   },
   "chipper": {
