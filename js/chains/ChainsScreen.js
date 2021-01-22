@@ -14,7 +14,7 @@ class ChainsScreen extends Screen {
   constructor( tandem ) {
     super(
       () => {return {};},
-      function( model ) { return new ChainsView( model, tandem.createTandem( 'view' ) ); },
+      model => new ChainsView( model, tandem.createTandem( 'view' ) ),
       { tandem: tandem }
     );
   }
