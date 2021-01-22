@@ -13,7 +13,7 @@ import ChainsView from './view/ChainsView.js';
 class ChainsScreen extends Screen {
   constructor( tandem ) {
     super(
-      function() { return {}; },
+      () => {return {};},
       function( model ) { return new ChainsView( model, tandem.createTandem( 'view' ) ); },
       { tandem: tandem }
     );
