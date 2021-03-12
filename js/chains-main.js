@@ -18,6 +18,6 @@ const simOptions = {
   }
 };
 
-simLauncher.launch( function() {
+simLauncher.launch( () => {
   new Sim( chainsTitleString, [ new ChainsScreen( Tandem.ROOT.createTandem( 'chainsScreen' ) ) ], simOptions ).start();
 } );
