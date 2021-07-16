@@ -1,9 +1,5 @@
 {
-  "comment": "# chains 1.28.0-dev.4 Thu Jul 15 2021 17:26:54 GMT-0600 (Mountain Daylight Time)",
-  "annual": {
-    "sha": "3b619932287ae6abca6f3e2562a76eea1f3059e6",
-    "branch": "master"
-  },
+  "comment": "# chains 1.32.0-rc.0 Thu Jul 15 2021 18:17:57 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "f360fa1bd09a47b3c9e49cd90c8dddd136a13e0c",
     "branch": "master"
@@ -17,11 +13,11 @@
     "branch": "master"
   },
   "chains": {
-    "sha": "dc9f11ba60c74ed1dc6fbc369be043c6ce839a7d",
-    "branch": "master"
+    "sha": "cf3186698e463fc4cae379b772e1a4dd20f2f019",
+    "branch": "1.32"
   },
   "chipper": {
-    "sha": "f6987f9407ed7a4b2767280e03ae361ab5a96de0",
+    "sha": "67970945cf747a168030aa7e649cd8550badd92e",
     "branch": "master"
   },
   "dot": {
