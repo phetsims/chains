@@ -21,6 +21,7 @@ the sims, as well as other important information.
 ### Quick Start
 (1) Clone the simulation and its dependencies:
 ```
+git clone https://github.com/phetsims/annual.git
 git clone https://github.com/phetsims/assert.git
 git clone https://github.com/phetsims/axon.git
 git clone https://github.com/phetsims/babel.git
@@ -40,6 +41,7 @@ git clone https://github.com/phetsims/sherpa.git
 git clone https://github.com/phetsims/sun.git
 git clone https://github.com/phetsims/tambo.git
 git clone https://github.com/phetsims/tandem.git
+git clone https://github.com/phetsims/twixt.git
 git clone https://github.com/phetsims/utterance-queue.git
 ```
 (2) Start an http-server
