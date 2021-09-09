@@ -1,6 +1,6 @@
 {
   "comment": "# chains 1.34.0-rc.1 Thu Aug 05 2021 11:00:31 GMT-0600 (Mountain Daylight Time)",
-  "annual": {
+  "phet-alias": {
     "sha": "675f006f0086d552f90e0ed00272b7b42998920b",
     "branch": "HEAD"
   },
