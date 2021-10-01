@@ -1,5 +1,5 @@
 // Copyright 2015-2021, University of Colorado Boulder
-// @ts-nocheck
+
 /**
  * View for the 'Chains' screen.
  *
@@ -28,9 +28,6 @@ const unitsNmString = sceneryPhetStrings.units_nm;
 
 // constants
 const FONT = new PhetFont( 36 );
-
-const x: number = 7;
-console.log( 'x = ' + x );
 
 class ChainsView extends ScreenView {
 
