@@ -12,9 +12,9 @@ import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.j
 import MultiLineText from '../../../../scenery-phet/js/MultiLineText.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import sceneryPhetStrings from '../../../../scenery-phet/js/sceneryPhetStrings.js';
-import LayoutBox from '../../../../scenery/js/nodes/LayoutBox.js';
-import RichText from '../../../../scenery/js/nodes/RichText.js';
-import Text from '../../../../scenery/js/nodes/Text.js';
+import { LayoutBox } from '../../../../scenery/js/imports.js';
+import { RichText } from '../../../../scenery/js/imports.js';
+import { Text } from '../../../../scenery/js/imports.js';
 import chains from '../../chains.js';
 import chainsStrings from '../../chainsStrings.js';
 
