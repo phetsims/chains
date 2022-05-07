@@ -9,14 +9,14 @@ import chains from './chains.js';
 
 type StringsType = {
   'chains': {
-    'title': string
-  },
-  'plainString': string,
-  'multilineString': string,
-  'htmlString': string,
-  'patternString': string,
-  'namedPlaceholdersString': string,
-  'size': string
+    'title': string;
+  };
+  'plainString': string;
+  'multilineString': string;
+  'htmlString': string;
+  'patternString': string;
+  'namedPlaceholdersString': string;
+  'size': string;
 };
 
 const chainsStrings = getStringModule( 'CHAINS' ) as StringsType;
