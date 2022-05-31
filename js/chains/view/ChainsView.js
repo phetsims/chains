@@ -12,9 +12,7 @@ import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.j
 import MultiLineText from '../../../../scenery-phet/js/MultiLineText.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import sceneryPhetStrings from '../../../../scenery-phet/js/sceneryPhetStrings.js';
-import { LayoutBox } from '../../../../scenery/js/imports.js';
-import { RichText } from '../../../../scenery/js/imports.js';
-import { Text } from '../../../../scenery/js/imports.js';
+import { RichText, Text, VBox } from '../../../../scenery/js/imports.js';
 import chains from '../../chains.js';
 import chainsStrings from '../../chainsStrings.js';
 
@@ -41,7 +39,7 @@ class ChainsView extends ScreenView {
       tandem: tandem
     } );
 
-    this.addChild( new LayoutBox( {
+    this.addChild( new VBox( {
       align: 'left',
       spacing: 25,
       children: [
