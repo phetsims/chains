@@ -9,7 +9,6 @@
 import ScreenView from '../../../../joist/js/ScreenView.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
-import MultiLineText from '../../../../scenery-phet/js/MultiLineText.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import sceneryPhetStrings from '../../../../scenery-phet/js/sceneryPhetStrings.js';
 import { RichText, Text, VBox } from '../../../../scenery/js/imports.js';
@@ -48,7 +47,7 @@ class ChainsView extends ScreenView {
           fill: 'green',
           tandem: tandem.createTandem( 'plainString' )
         } ),
-        new MultiLineText( multilineStringString, {
+        new RichText( multilineStringString, {
           font: FONT,
           align: 'left',
           tandem: tandem.createTandem( 'multiLineString' )
