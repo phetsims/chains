@@ -11,20 +11,20 @@ import chains from './chains.js';
 type StringsType = {
   'chains': {
     'title': string;
-    'titleProperty': TReadOnlyProperty<string>;
+    'titleStringProperty': TReadOnlyProperty<string>;
   };
   'plainString': string;
-  'plainStringProperty': TReadOnlyProperty<string>;
+  'plainStringStringProperty': TReadOnlyProperty<string>;
   'multilineString': string;
-  'multilineStringProperty': TReadOnlyProperty<string>;
+  'multilineStringStringProperty': TReadOnlyProperty<string>;
   'htmlString': string;
-  'htmlStringProperty': TReadOnlyProperty<string>;
+  'htmlStringStringProperty': TReadOnlyProperty<string>;
   'patternString': string;
-  'patternStringProperty': TReadOnlyProperty<string>;
+  'patternStringStringProperty': TReadOnlyProperty<string>;
   'namedPlaceholdersString': string;
-  'namedPlaceholdersStringProperty': TReadOnlyProperty<string>;
+  'namedPlaceholdersStringStringProperty': TReadOnlyProperty<string>;
   'size': string;
-  'sizeProperty': TReadOnlyProperty<string>;
+  'sizeStringProperty': TReadOnlyProperty<string>;
 };
 
 const chainsStrings = getStringModule( 'CHAINS' ) as StringsType;
