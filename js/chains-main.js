@@ -10,7 +10,7 @@ import Tandem from '../../tandem/js/Tandem.js';
 import ChainsScreen from './chains/ChainsScreen.js';
 import chainsStrings from './chainsStrings.js';
 
-const chainsTitleString = chainsStrings.chains.title;
+const chainsTitleStringProperty = chainsStrings.chains.titleStringProperty;
 
 const simOptions = {
   credits: {
@@ -19,5 +19,5 @@ const simOptions = {
 };
 
 simLauncher.launch( () => {
-  new Sim( chainsTitleString, [ new ChainsScreen( Tandem.ROOT.createTandem( 'chainsScreen' ) ) ], simOptions ).start();
+  new Sim( chainsTitleStringProperty, [ new ChainsScreen( Tandem.ROOT.createTandem( 'chainsScreen' ) ) ], simOptions ).start();
 } );
