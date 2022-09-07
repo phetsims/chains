@@ -10,7 +10,7 @@ import ScreenView from '../../../../joist/js/ScreenView.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
-import sceneryPhetStrings from '../../../../scenery-phet/js/sceneryPhetStrings.js';
+import SceneryPhetStrings from '../../../../scenery-phet/js/SceneryPhetStrings.js';
 import { RichText, Text, VBox } from '../../../../scenery/js/imports.js';
 import chains from '../../chains.js';
 import chainsStrings from '../../chainsStrings.js';
@@ -21,7 +21,7 @@ const namedPlaceholdersStringString = chainsStrings.namedPlaceholdersString;
 const patternStringString = chainsStrings.patternString;
 const plainStringString = chainsStrings.plainString;
 const sizeString = chainsStrings.size;
-const unitsNmString = sceneryPhetStrings.units_nm;
+const unitsNmString = SceneryPhetStrings.units_nm;
 
 // constants
 const FONT = new PhetFont( 36 );
