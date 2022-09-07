@@ -8,9 +8,9 @@ import Sim from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import ChainsScreen from './chains/ChainsScreen.js';
-import chainsStrings from './chainsStrings.js';
+import ChainsStrings from './ChainsStrings.js';
 
-const chainsTitleStringProperty = chainsStrings.chains.titleStringProperty;
+const chainsTitleStringProperty = ChainsStrings.chains.titleStringProperty;
 
 const simOptions = {
   credits: {

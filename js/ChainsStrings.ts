@@ -27,8 +27,8 @@ type StringsType = {
   'sizeStringProperty': TReadOnlyProperty<string>;
 };
 
-const chainsStrings = getStringModule( 'CHAINS' ) as StringsType;
+const ChainsStrings = getStringModule( 'CHAINS' ) as StringsType;
 
-chains.register( 'chainsStrings', chainsStrings );
+chains.register( 'ChainsStrings', ChainsStrings );
 
-export default chainsStrings;
+export default ChainsStrings;

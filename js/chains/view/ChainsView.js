@@ -13,14 +13,14 @@ import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import SceneryPhetStrings from '../../../../scenery-phet/js/SceneryPhetStrings.js';
 import { RichText, Text, VBox } from '../../../../scenery/js/imports.js';
 import chains from '../../chains.js';
-import chainsStrings from '../../chainsStrings.js';
+import ChainsStrings from '../../ChainsStrings.js';
 
-const htmlStringString = chainsStrings.htmlString;
-const multilineStringString = chainsStrings.multilineString;
-const namedPlaceholdersStringString = chainsStrings.namedPlaceholdersString;
-const patternStringString = chainsStrings.patternString;
-const plainStringString = chainsStrings.plainString;
-const sizeString = chainsStrings.size;
+const htmlStringString = ChainsStrings.htmlString;
+const multilineStringString = ChainsStrings.multilineString;
+const namedPlaceholdersStringString = ChainsStrings.namedPlaceholdersString;
+const patternStringString = ChainsStrings.patternString;
+const plainStringString = ChainsStrings.plainString;
+const sizeString = ChainsStrings.size;
 const unitsNmString = SceneryPhetStrings.units_nm;
 
 // constants
