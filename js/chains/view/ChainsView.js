@@ -45,25 +45,25 @@ class ChainsView extends ScreenView {
         new Text( plainStringString, {
           font: FONT,
           fill: 'green',
-          tandem: tandem.createTandem( 'plainString' )
+          tandem: tandem.createTandem( 'plainStringText' )
         } ),
         new RichText( multilineStringString, {
           font: FONT,
           align: 'left',
-          tandem: tandem.createTandem( 'multiLineString' )
+          tandem: tandem.createTandem( 'multiLineStringText' )
         } ),
         new RichText( htmlStringString, {
           font: FONT,
-          tandem: tandem.createTandem( 'htmlString' )
+          tandem: tandem.createTandem( 'htmlStringText' )
         } ),
         new Text( StringUtils.format( patternStringString, sizeString, 8, unitsNmString ), {
           font: FONT,
-          tandem: tandem.createTandem( 'patternString' )
+          tandem: tandem.createTandem( 'patternStringText' )
         } ),
         new Text( StringUtils.fillIn( namedPlaceholdersStringString, { name: 'Alice', speed: '100' } ), {
           font: FONT,
           fill: '#990000',
-          tandem: tandem.createTandem( 'namedPlaceholdersString' )
+          tandem: tandem.createTandem( 'namedPlaceholdersStringText' )
         } )
       ],
       center: this.layoutBounds.center
