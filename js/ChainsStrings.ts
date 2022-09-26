@@ -5,26 +5,26 @@
  */
 /* eslint-disable */
 import getStringModule from '../../chipper/js/getStringModule.js';
-import TReadOnlyProperty from '../../axon/js/TReadOnlyProperty.js';
+import LinkableProperty from '../../axon/js/LinkableProperty.js';
 import chains from './chains.js';
 
 type StringsType = {
   'chains': {
     'title': string;
-    'titleStringProperty': TReadOnlyProperty<string>;
+    'titleStringProperty': LinkableProperty<string>;
   };
   'plainString': string;
-  'plainStringStringProperty': TReadOnlyProperty<string>;
+  'plainStringStringProperty': LinkableProperty<string>;
   'multilineString': string;
-  'multilineStringStringProperty': TReadOnlyProperty<string>;
+  'multilineStringStringProperty': LinkableProperty<string>;
   'htmlString': string;
-  'htmlStringStringProperty': TReadOnlyProperty<string>;
+  'htmlStringStringProperty': LinkableProperty<string>;
   'patternString': string;
-  'patternStringStringProperty': TReadOnlyProperty<string>;
+  'patternStringStringProperty': LinkableProperty<string>;
   'namedPlaceholdersString': string;
-  'namedPlaceholdersStringStringProperty': TReadOnlyProperty<string>;
+  'namedPlaceholdersStringStringProperty': LinkableProperty<string>;
   'size': string;
-  'sizeStringProperty': TReadOnlyProperty<string>;
+  'sizeStringProperty': LinkableProperty<string>;
 };
 
 const ChainsStrings = getStringModule( 'CHAINS' ) as StringsType;
