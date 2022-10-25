@@ -15,14 +15,6 @@ import { RichText, Text, VBox } from '../../../../scenery/js/imports.js';
 import chains from '../../chains.js';
 import ChainsStrings from '../../ChainsStrings.js';
 
-const htmlStringString = ChainsStrings.htmlString;
-const multilineStringString = ChainsStrings.multilineString;
-const namedPlaceholdersStringString = ChainsStrings.namedPlaceholdersString;
-const patternStringString = ChainsStrings.patternString;
-const plainStringString = ChainsStrings.plainString;
-const sizeString = ChainsStrings.size;
-const unitsNmString = SceneryPhetStrings.units_nm;
-
 // constants
 const FONT = new PhetFont( 36 );
 
@@ -42,25 +34,26 @@ class ChainsView extends ScreenView {
       align: 'left',
       spacing: 25,
       children: [
-        new Text( plainStringString, {
+        new Text( ChainsStrings.plainStringStringProperty.value, {
           font: FONT,
           fill: 'green',
           tandem: tandem.createTandem( 'plainStringText' )
         } ),
-        new RichText( multilineStringString, {
+        new RichText( ChainsStrings.multilineStringStringProperty.value, {
           font: FONT,
           align: 'left',
           tandem: tandem.createTandem( 'multiLineStringText' )
         } ),
-        new RichText( htmlStringString, {
+        new RichText( ChainsStrings.htmlStringStringProperty.value, {
           font: FONT,
           tandem: tandem.createTandem( 'htmlStringText' )
         } ),
-        new Text( StringUtils.format( patternStringString, sizeString, 8, unitsNmString ), {
+        new Text( StringUtils.format( ChainsStrings.patternStringStringProperty.value, ChainsStrings.sizeStringProperty.value,
+          8, SceneryPhetStrings.units_nmStringProperty.value ), {
           font: FONT,
           tandem: tandem.createTandem( 'patternStringText' )
         } ),
-        new Text( StringUtils.fillIn( namedPlaceholdersStringString, { name: 'Alice', speed: '100' } ), {
+        new Text( StringUtils.fillIn( ChainsStrings.namedPlaceholdersStringStringProperty.value, { name: 'Alice', speed: '100' } ), {
           font: FONT,
           fill: '#990000',
           tandem: tandem.createTandem( 'namedPlaceholdersStringText' )
