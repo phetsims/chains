@@ -10,20 +10,13 @@ import chains from './chains.js';
 
 type StringsType = {
   'chains': {
-    'title': string;
     'titleStringProperty': LinkableProperty<string>;
   };
-  'plainString': string;
   'plainStringStringProperty': LinkableProperty<string>;
-  'multilineString': string;
   'multilineStringStringProperty': LinkableProperty<string>;
-  'htmlString': string;
   'htmlStringStringProperty': LinkableProperty<string>;
-  'patternString': string;
   'patternStringStringProperty': LinkableProperty<string>;
-  'namedPlaceholdersString': string;
   'namedPlaceholdersStringStringProperty': LinkableProperty<string>;
-  'size': string;
   'sizeStringProperty': LinkableProperty<string>;
 };
 

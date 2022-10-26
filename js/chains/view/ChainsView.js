@@ -6,6 +6,8 @@
  * @author Chris Malley (PixelZoom, Inc.)
  */
 
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
+import PatternStringProperty from '../../../../axon/js/PatternStringProperty.js';
 import ScreenView from '../../../../joist/js/ScreenView.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
@@ -30,30 +32,37 @@ class ChainsView extends ScreenView {
       tandem: tandem
     } );
 
+    const sizeStringProperty = new DerivedProperty(
+      [ ChainsStrings.patternStringStringProperty, ChainsStrings.sizeStringProperty, SceneryPhetStrings.units_nmStringProperty ],
+      ( pattern, sizeString, unitsString ) => StringUtils.format( pattern, sizeString, 8, unitsString )
+    );
+
     this.addChild( new VBox( {
       align: 'left',
       spacing: 25,
       children: [
-        new Text( ChainsStrings.plainStringStringProperty.value, {
+        new Text( ChainsStrings.plainStringStringProperty, {
           font: FONT,
           fill: 'green',
           tandem: tandem.createTandem( 'plainStringText' )
         } ),
-        new RichText( ChainsStrings.multilineStringStringProperty.value, {
+        new RichText( ChainsStrings.multilineStringStringProperty, {
           font: FONT,
           align: 'left',
           tandem: tandem.createTandem( 'multiLineStringText' )
         } ),
-        new RichText( ChainsStrings.htmlStringStringProperty.value, {
+        new RichText( ChainsStrings.htmlStringStringProperty, {
           font: FONT,
           tandem: tandem.createTandem( 'htmlStringText' )
         } ),
-        new Text( StringUtils.format( ChainsStrings.patternStringStringProperty.value, ChainsStrings.sizeStringProperty.value,
-          8, SceneryPhetStrings.units_nmStringProperty.value ), {
+        new Text( sizeStringProperty, {
           font: FONT,
           tandem: tandem.createTandem( 'patternStringText' )
         } ),
-        new Text( StringUtils.fillIn( ChainsStrings.namedPlaceholdersStringStringProperty.value, { name: 'Alice', speed: '100' } ), {
+        new Text( new PatternStringProperty( ChainsStrings.namedPlaceholdersStringStringProperty, {
+          name: 'Alice',
+          speed: '100'
+        } ), {
           font: FONT,
           fill: '#990000',
           tandem: tandem.createTandem( 'namedPlaceholdersStringText' )
