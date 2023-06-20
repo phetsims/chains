@@ -5,19 +5,19 @@
  */
 /* eslint-disable */
 import getStringModule from '../../chipper/js/getStringModule.js';
-import LinkableProperty from '../../axon/js/LinkableProperty.js';
+import type LocalizedStringProperty from '../../chipper/js/LocalizedStringProperty.js';
 import chains from './chains.js';
 
 type StringsType = {
   'chains': {
-    'titleStringProperty': LinkableProperty<string>;
+    'titleStringProperty': LocalizedStringProperty;
   };
-  'plainStringStringProperty': LinkableProperty<string>;
-  'multilineStringStringProperty': LinkableProperty<string>;
-  'htmlStringStringProperty': LinkableProperty<string>;
-  'patternStringStringProperty': LinkableProperty<string>;
-  'namedPlaceholdersStringStringProperty': LinkableProperty<string>;
-  'sizeStringProperty': LinkableProperty<string>;
+  'plainStringStringProperty': LocalizedStringProperty;
+  'multilineStringStringProperty': LocalizedStringProperty;
+  'htmlStringStringProperty': LocalizedStringProperty;
+  'patternStringStringProperty': LocalizedStringProperty;
+  'namedPlaceholdersStringStringProperty': LocalizedStringProperty;
+  'sizeStringProperty': LocalizedStringProperty;
 };
 
 const ChainsStrings = getStringModule( 'CHAINS' ) as StringsType;
