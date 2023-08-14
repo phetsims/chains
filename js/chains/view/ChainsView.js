@@ -64,7 +64,7 @@ class ChainsView extends ScreenView {
           speed: '100'
         } ), {
           font: FONT,
-          fill: '#990000',
+          fill: '#99FFFF',
           tandem: tandem.createTandem( 'namedPlaceholdersStringText' )
         } )
       ],
