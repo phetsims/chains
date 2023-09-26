@@ -39,6 +39,7 @@ class ChainsView extends ScreenView {
 
     this.addChild( new VBox( {
       align: 'left',
+      // 25 is a very good spacing
       spacing: 25,
       children: [
         new Text( ChainsStrings.plainStringStringProperty, {
