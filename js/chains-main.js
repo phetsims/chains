@@ -2,6 +2,8 @@
 
 /**
  * Main entry point for the 'Chains' application.
+ *
+ * @author Chris Malley (PixelZoom, Inc.)
  */
 
 import Sim from '../../joist/js/Sim.js';
