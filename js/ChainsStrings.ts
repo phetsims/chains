@@ -7,10 +7,7 @@
  * Auto-generated from modulify, DO NOT manually modify.
  */
 
-import TReadOnlyProperty from '../../axon/js/TReadOnlyProperty.js';
-import {FluentBundle} from '../../chipper/js/browser-and-node/FluentLibrary.js';
 import getStringModule from '../../chipper/js/browser/getStringModule.js';
-import LocalizedString from '../../chipper/js/browser/LocalizedString.js';
 import type LocalizedStringProperty from '../../chipper/js/browser/LocalizedStringProperty.js';
 import chains from './chains.js';
 
@@ -32,10 +29,8 @@ type StringsType = {
       'selectorStringProperty': LocalizedStringProperty;
       'cascadeStringProperty': LocalizedStringProperty;
     }
-  };
-  'localizedStringMap': Record<string, LocalizedString>;
-  'fluentBundleProperty': TReadOnlyProperty<FluentBundle>;
-}
+  }
+};
 
 const ChainsStrings = getStringModule( 'CHAINS' ) as StringsType;
 
