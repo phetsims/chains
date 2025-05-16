@@ -1,0 +1,19 @@
+chains.title:            Chains
+plainString:             It's not easy being green.
+multilineString:         Give me a<br>break.
+htmlString:              Turning left on <i>red</i> is a <b>bold</b> move.
+patternString:           "{0}: {1} {2}"
+namedPlaceholdersString: "{{name}} is traveling at {{speed}} km/hr"
+size:                    Size
+a11y:
+  nested:
+    constant:        Constant string
+    fluentReference: Hello { a11y_nested_constant } world
+    fluentVariable:  Hello { $variable } world
+    selector:        |-
+                     { $activityLevel ->
+                     *[calm]            relatively calm
+                     [active]          active
+                     [activeAndPaused] active and paused
+                     }
+    cascade:         Right now, the weather is { a11y_nested_selector }.

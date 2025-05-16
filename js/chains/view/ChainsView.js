@@ -17,6 +17,7 @@ import VBox from '../../../../scenery/js/layout/nodes/VBox.js';
 import RichText from '../../../../scenery/js/nodes/RichText.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
 import chains from '../../chains.js';
+import ChainsFluent from '../../ChainsFluent.js';
 import ChainsStrings from '../../ChainsStrings.js';
 
 // constants
@@ -38,6 +39,11 @@ class ChainsView extends ScreenView {
       [ ChainsStrings.patternStringStringProperty, ChainsStrings.sizeStringProperty, SceneryPhetStrings.units_nmStringProperty ],
       ( pattern, sizeString, unitsString ) => StringUtils.format( pattern, sizeString, 8, unitsString )
     );
+
+    console.log( ChainsFluent.a11y.nested.constant.format() );
+    console.log( ChainsFluent.a11y.nested.fluentReference.format() );
+    console.log( ChainsFluent.a11y.nested.fluentVariable.format( { variable: 'OUTSIDE' } ) );
+    console.log( ChainsFluent.a11y.nested.cascade.format( { activityLevel: 'calm' } ) );
 
     this.addChild( new VBox( {
       align: 'left',
@@ -68,7 +74,11 @@ class ChainsView extends ScreenView {
           font: FONT,
           fill: '#99FFFF',
           tandem: tandem.createTandem( 'namedPlaceholdersStringText' )
-        } )
+        } ),
+        new Text( ChainsFluent.a11y.nested.constant.format(), { font: FONT } ),
+        new Text( ChainsFluent.a11y.nested.fluentReference.format(), { font: FONT } ),
+        new Text( ChainsFluent.a11y.nested.fluentVariable.format( { variable: 'OUTSIDE' } ), { font: FONT } ),
+        new Text( ChainsFluent.a11y.nested.cascade.format( { activityLevel: 'calm' } ), { font: FONT } )
       ],
       center: this.layoutBounds.center
     } ) );
