@@ -69,8 +69,6 @@ const formatToProperty = ( key: string, args: IntentionalAny ): TReadOnlyPropert
     }
   } );
 
-  // TODO: When the locale changes or when a string forming the FTL changes, also update the string property, see https://github.com/phetsims/chipper/issues/1588
-
   return stringProperty;
 };
 
