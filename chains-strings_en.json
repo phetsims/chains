@@ -35,7 +35,7 @@
         "value": "{ $activityLevel ->\n*[calm]            relatively calm\n[active]          active\n[activeAndPaused] active and paused\n}"
       },
       "cascade": {
-        "value": "Weather is currently { a11y_nested_selector }."
+        "value": "Right now, the weather is { a11y_nested_selector }."
       }
     }
   }

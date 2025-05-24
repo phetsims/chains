@@ -1,132 +1,70 @@
-/* eslint-disable */
+// Copyright 2025, University of Colorado Boulder
 // AUTOMATICALLY GENERATED – DO NOT EDIT.
-// Generated 2025-05-16T00:03:19.772Z from chains-strings_en.yaml
+// Generated from chains-strings_en.yaml
 
-import StringProperty from '../../axon/js/StringProperty.js';
+/* eslint-disable */
+/* @formatter:off */
+
 import TReadOnlyProperty from '../../axon/js/TReadOnlyProperty.js';
-import FluentUtils from '../../chipper/js/browser/FluentUtils.js';
-import { FluentBundle, FluentResource } from '../../chipper/js/browser-and-node/FluentLibrary.js';
+import FluentPattern from '../../chipper/js/browser/FluentPattern.js';
+import FluentContainer from '../../chipper/js/browser/FluentContainer.js';
+import FluentConstant from '../../chipper/js/browser/FluentConstant.js';
 import IntentionalAny from '../../phet-core/js/types/IntentionalAny.js';
 import chains from './chains.js';
 import ChainsStrings from './ChainsStrings.js';
-import { isTReadOnlyProperty } from '../../axon/js/TReadOnlyProperty.js';
 
-const getFTL = () => {
+const getFTL = (): string => {
   const ftl = `
-chains.title = ${ChainsStrings.chains.titleStringProperty.value}
-
+chains_title = ${ChainsStrings.chains.titleStringProperty.value}
 plainString = ${ChainsStrings.plainStringStringProperty.value}
-
 multilineString = ${ChainsStrings.multilineStringStringProperty.value}
-
 htmlString = ${ChainsStrings.htmlStringStringProperty.value}
-
-patternString = ${ChainsStrings.patternStringStringProperty.value}
-
-namedPlaceholdersString = ${ChainsStrings.namedPlaceholdersStringStringProperty.value}
-
 size = ${ChainsStrings.sizeStringProperty.value}
-
 a11y_nested_constant = ${ChainsStrings.a11y.nested.constantStringProperty.value}
-
 a11y_nested_fluentReference = ${ChainsStrings.a11y.nested.fluentReferenceStringProperty.value}
-
 a11y_nested_fluentVariable = ${ChainsStrings.a11y.nested.fluentVariableStringProperty.value}
-
 a11y_nested_selector = ${ChainsStrings.a11y.nested.selectorStringProperty.value}
-
 a11y_nested_cascade = ${ChainsStrings.a11y.nested.cascadeStringProperty.value}
 `;
   return ftl;
 };
 
-const formatPattern = ( key: string, args: IntentionalAny ): string => {
-  const bundle   = new FluentBundle( 'en' );
-  const resource = new FluentResource( getFTL() );
-  const errors   = bundle.addResource( resource );
-  assert && assert( errors.length === 0, 'Errors when adding resource for locale en' );
+const allStringProperties = [
+  ChainsStrings.chains.titleStringProperty,
+ChainsStrings.plainStringStringProperty,
+ChainsStrings.multilineStringStringProperty,
+ChainsStrings.htmlStringStringProperty,
+ChainsStrings.patternStringStringProperty,
+ChainsStrings.namedPlaceholdersStringStringProperty,
+ChainsStrings.sizeStringProperty,
+ChainsStrings.a11y.nested.constantStringProperty,
+ChainsStrings.a11y.nested.fluentReferenceStringProperty,
+ChainsStrings.a11y.nested.fluentVariableStringProperty,
+ChainsStrings.a11y.nested.selectorStringProperty,
+ChainsStrings.a11y.nested.cascadeStringProperty
+];
 
-  const newArgs = FluentUtils.handleFluentArgs( args );
-
-  const message = bundle.getMessage( key );
-  const result  = bundle.formatPattern( message!.value!, newArgs, errors );
-  assert && assert( errors.length === 0, `Fluent errors found when formatting message: ${errors}` );
-  return result;
-};
-
-const formatToProperty = ( key: string, args: IntentionalAny ): TReadOnlyProperty<string> => {
-  const initialValue = formatPattern( key, args );
-  const stringProperty = new StringProperty( initialValue );
-
-  const update = () => {
-    stringProperty.value = formatPattern( key, args );
-  };
-
-  // Whenever any arg changes update the string property
-  Object.values( args ).forEach( arg => {
-    if ( isTReadOnlyProperty( arg ) ) {
-      arg.lazyLink( update )
-    }
-  } );
-
-  return stringProperty;
-};
+const fluentSupport = new FluentContainer( getFTL, allStringProperties );
 
 const ChainsFluent = {
-  "chains.title": {
-    format: ( args: IntentionalAny ): string => formatPattern( 'chains.title', args ),
-    createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'chains.title', args )
-  },
-  plainString: {
-    format: ( args: IntentionalAny ): string => formatPattern( 'plainString', args ),
-    createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'plainString', args )
-  },
-  multilineString: {
-    format: ( args: IntentionalAny ): string => formatPattern( 'multilineString', args ),
-    createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'multilineString', args )
-  },
-  htmlString: {
-    format: ( args: IntentionalAny ): string => formatPattern( 'htmlString', args ),
-    createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'htmlString', args )
-  },
-  patternString: {
-    format: ( args: IntentionalAny ): string => formatPattern( 'patternString', args ),
-    createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'patternString', args )
-  },
-  namedPlaceholdersString: {
-    format: ( args: IntentionalAny ): string => formatPattern( 'namedPlaceholdersString', args ),
-    createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'namedPlaceholdersString', args )
-  },
-  size: {
-    format: ( args: IntentionalAny ): string => formatPattern( 'size', args ),
-    createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'size', args )
-  },
+  "chains.titleStringProperty": new FluentConstant( fluentSupport.bundleProperty, 'chains_title' ),
+  plainStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'plainString' ),
+  multilineStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'multilineString' ),
+  htmlStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'htmlString' ),
+  patternStringStringProperty: ChainsStrings.patternStringStringProperty,
+  namedPlaceholdersStringStringProperty: ChainsStrings.namedPlaceholdersStringStringProperty,
+  sizeStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'size' ),
   a11y: {
     nested: {
-      constant: {
-        format: ( args: IntentionalAny ): string => formatPattern( 'a11y_nested_constant', args ),
-        createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'a11y_nested_constant', args )
-      },
-      fluentReference: {
-        format: ( args: IntentionalAny ): string => formatPattern( 'a11y_nested_fluentReference', args ),
-        createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'a11y_nested_fluentReference', args )
-      },
-      fluentVariable: {
-        format: ( args: IntentionalAny ): string => formatPattern( 'a11y_nested_fluentVariable', args ),
-        createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'a11y_nested_fluentVariable', args )
-      },
-      selector: {
-        format: ( args: IntentionalAny ): string => formatPattern( 'a11y_nested_selector', args ),
-        createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'a11y_nested_selector', args )
-      },
-      cascade: {
-        format: ( args: IntentionalAny ): string => formatPattern( 'a11y_nested_cascade', args ),
-        createProperty: ( args: IntentionalAny ): TReadOnlyProperty<string> => formatToProperty( 'a11y_nested_cascade', args )
-      }
+      constantStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_constant' ),
+      fluentReferenceStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_fluentReference' ),
+      fluentVariable: new FluentPattern<{ variable: IntentionalAny }>( fluentSupport.bundleProperty, 'a11y_nested_fluentVariable' ),
+      selector: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_selector' ),
+      cascade: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_cascade' )
     }
   }
 };
 
 export default ChainsFluent;
 
-chains.register( 'ChainsFluent', ChainsFluent );
+chains.register('ChainsFluent', ChainsFluent);
