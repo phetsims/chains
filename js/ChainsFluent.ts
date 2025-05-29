@@ -13,38 +13,31 @@ import IntentionalAny from '../../phet-core/js/types/IntentionalAny.js';
 import chains from './chains.js';
 import ChainsStrings from './ChainsStrings.js';
 
-const getFTL = (): string => {
-  const ftl = `
-chains_title = ${ChainsStrings.chains.titleStringProperty.value}
-plainString = ${ChainsStrings.plainStringStringProperty.value}
-multilineString = ${ChainsStrings.multilineStringStringProperty.value}
-htmlString = ${ChainsStrings.htmlStringStringProperty.value}
-size = ${ChainsStrings.sizeStringProperty.value}
-a11y_nested_constant = ${ChainsStrings.a11y.nested.constantStringProperty.value}
-a11y_nested_fluentReference = ${ChainsStrings.a11y.nested.fluentReferenceStringProperty.value}
-a11y_nested_fluentVariable = ${ChainsStrings.a11y.nested.fluentVariableStringProperty.value}
-a11y_nested_selector = ${ChainsStrings.a11y.nested.selectorStringProperty.value}
-a11y_nested_cascade = ${ChainsStrings.a11y.nested.cascadeStringProperty.value}
-`;
+// This map is used to create the fluent file and link to all StringProperties.
+// Accessing StringProperties is also critical for including them in the built sim.
+const fluentKeyToStringPropertyMap = new Map( [
+  ['chains_title', ChainsStrings.chains.titleStringProperty],
+  ['plainString', ChainsStrings.plainStringStringProperty],
+  ['multilineString', ChainsStrings.multilineStringStringProperty],
+  ['htmlString', ChainsStrings.htmlStringStringProperty],
+  ['size', ChainsStrings.sizeStringProperty],
+  ['a11y_nested_constant', ChainsStrings.a11y.nested.constantStringProperty],
+  ['a11y_nested_fluentReference', ChainsStrings.a11y.nested.fluentReferenceStringProperty],
+  ['a11y_nested_fluentVariable', ChainsStrings.a11y.nested.fluentVariableStringProperty],
+  ['a11y_nested_selector', ChainsStrings.a11y.nested.selectorStringProperty],
+  ['a11y_nested_cascade', ChainsStrings.a11y.nested.cascadeStringProperty]
+] );
+
+// A function that creates contents for a new Fluent file, which will be needed if any string changes.
+const createFluentFile = (): string => {
+  let ftl = '';
+  for (const [key, stringProperty] of fluentKeyToStringPropertyMap.entries()) {
+    ftl += `${key} = ${stringProperty.value}\n`;
+  }
   return ftl;
 };
 
-const allStringProperties = [
-  ChainsStrings.chains.titleStringProperty,
-ChainsStrings.plainStringStringProperty,
-ChainsStrings.multilineStringStringProperty,
-ChainsStrings.htmlStringStringProperty,
-ChainsStrings.patternStringStringProperty,
-ChainsStrings.namedPlaceholdersStringStringProperty,
-ChainsStrings.sizeStringProperty,
-ChainsStrings.a11y.nested.constantStringProperty,
-ChainsStrings.a11y.nested.fluentReferenceStringProperty,
-ChainsStrings.a11y.nested.fluentVariableStringProperty,
-ChainsStrings.a11y.nested.selectorStringProperty,
-ChainsStrings.a11y.nested.cascadeStringProperty
-];
-
-const fluentSupport = new FluentContainer( getFTL, allStringProperties );
+const fluentSupport = new FluentContainer( createFluentFile, Array.from(fluentKeyToStringPropertyMap.values()) );
 
 const ChainsFluent = {
   "chains.titleStringProperty": new FluentConstant( fluentSupport.bundleProperty, 'chains_title' ),
