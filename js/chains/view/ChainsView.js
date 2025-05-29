@@ -40,8 +40,8 @@ class ChainsView extends ScreenView {
       ( pattern, sizeString, unitsString ) => StringUtils.format( pattern, sizeString, 8, unitsString )
     );
 
-    console.log( ChainsFluent.a11y.nested.constant.format() );
-    console.log( ChainsFluent.a11y.nested.fluentReference.format() );
+    console.log( ChainsFluent.a11y.nested.constantStringProperty );
+    console.log( ChainsFluent.a11y.nested.fluentReferenceStringProperty );
     console.log( ChainsFluent.a11y.nested.fluentVariable.format( { variable: 'OUTSIDE' } ) );
     console.log( ChainsFluent.a11y.nested.cascade.format( { activityLevel: 'calm' } ) );
 
@@ -75,8 +75,8 @@ class ChainsView extends ScreenView {
           fill: '#99FFFF',
           tandem: tandem.createTandem( 'namedPlaceholdersStringText' )
         } ),
-        new Text( ChainsFluent.a11y.nested.constant.format(), { font: FONT } ),
-        new Text( ChainsFluent.a11y.nested.fluentReference.format(), { font: FONT } ),
+        new Text( ChainsFluent.a11y.nested.constantStringProperty, { font: FONT } ),
+        new Text( ChainsFluent.a11y.nested.fluentReferenceStringProperty, { font: FONT } ),
         new Text( ChainsFluent.a11y.nested.fluentVariable.format( { variable: 'OUTSIDE' } ), { font: FONT } ),
         new Text( ChainsFluent.a11y.nested.cascade.format( { activityLevel: 'calm' } ), { font: FONT } )
       ],
