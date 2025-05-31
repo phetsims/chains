@@ -40,7 +40,9 @@ const createFluentFile = (): string => {
 const fluentSupport = new FluentContainer( createFluentFile, Array.from(fluentKeyToStringPropertyMap.values()) );
 
 const ChainsFluent = {
-  "chains.titleStringProperty": new FluentConstant( fluentSupport.bundleProperty, 'chains_title' ),
+  chains: {
+    titleStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'chains_title' )
+  },
   plainStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'plainString' ),
   multilineStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'multilineString' ),
   htmlStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'htmlString' ),
