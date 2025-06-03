@@ -6,10 +6,10 @@
 /* @formatter:off */
 
 import TReadOnlyProperty from '../../axon/js/TReadOnlyProperty.js';
+import type { FluentVariable } from '../../chipper/js/browser/FluentPattern.js';
 import FluentPattern from '../../chipper/js/browser/FluentPattern.js';
 import FluentContainer from '../../chipper/js/browser/FluentContainer.js';
 import FluentConstant from '../../chipper/js/browser/FluentConstant.js';
-import IntentionalAny from '../../phet-core/js/types/IntentionalAny.js';
 import chains from './chains.js';
 import ChainsStrings from './ChainsStrings.js';
 
@@ -53,7 +53,7 @@ const ChainsFluent = {
     nested: {
       constantStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_constant' ),
       fluentReferenceStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_fluentReference' ),
-      fluentVariable: new FluentPattern<{ variable: IntentionalAny }>( fluentSupport.bundleProperty, 'a11y_nested_fluentVariable' ),
+      fluentVariable: new FluentPattern<{ variable: FluentVariable }>( fluentSupport.bundleProperty, 'a11y_nested_fluentVariable' ),
       selector: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_selector' ),
       cascade: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_cascade' )
     }
