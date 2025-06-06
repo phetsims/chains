@@ -15,18 +15,26 @@ import ChainsStrings from './ChainsStrings.js';
 
 // This map is used to create the fluent file and link to all StringProperties.
 // Accessing StringProperties is also critical for including them in the built sim.
-const fluentKeyToStringPropertyMap = new Map( [
-  ['chains_title', ChainsStrings.chains.titleStringProperty],
-  ['plainString', ChainsStrings.plainStringStringProperty],
-  ['multilineString', ChainsStrings.multilineStringStringProperty],
-  ['htmlString', ChainsStrings.htmlStringStringProperty],
-  ['size', ChainsStrings.sizeStringProperty],
-  ['a11y_nested_constant', ChainsStrings.a11y.nested.constantStringProperty],
-  ['a11y_nested_fluentReference', ChainsStrings.a11y.nested.fluentReferenceStringProperty],
-  ['a11y_nested_fluentVariable', ChainsStrings.a11y.nested.fluentVariableStringProperty],
-  ['a11y_nested_selector', ChainsStrings.a11y.nested.selectorStringProperty],
-  ['a11y_nested_cascade', ChainsStrings.a11y.nested.cascadeStringProperty]
-] );
+// However, if strings are unused in Fluent system too, they will be fully excluded from
+// the build. So we need to only add actually used strings.
+const fluentKeyToStringPropertyMap = new Map();
+
+const addToMapIfDefined = ( key: string, sp: TReadOnlyProperty<string> | undefined ) => {
+  if ( sp ) {
+    fluentKeyToStringPropertyMap.set( key, sp );
+  }
+};
+
+addToMapIfDefined( 'chains_title', ChainsStrings?.["chains"]?.["titleStringProperty"] );
+addToMapIfDefined( 'plainString', ChainsStrings?.["plainStringStringProperty"] );
+addToMapIfDefined( 'multilineString', ChainsStrings?.["multilineStringStringProperty"] );
+addToMapIfDefined( 'htmlString', ChainsStrings?.["htmlStringStringProperty"] );
+addToMapIfDefined( 'size', ChainsStrings?.["sizeStringProperty"] );
+addToMapIfDefined( 'a11y_nested_constant', ChainsStrings?.["a11y"]?.["nested"]?.["constantStringProperty"] );
+addToMapIfDefined( 'a11y_nested_fluentReference', ChainsStrings?.["a11y"]?.["nested"]?.["fluentReferenceStringProperty"] );
+addToMapIfDefined( 'a11y_nested_fluentVariable', ChainsStrings?.["a11y"]?.["nested"]?.["fluentVariableStringProperty"] );
+addToMapIfDefined( 'a11y_nested_selector', ChainsStrings?.["a11y"]?.["nested"]?.["selectorStringProperty"] );
+addToMapIfDefined( 'a11y_nested_cascade', ChainsStrings?.["a11y"]?.["nested"]?.["cascadeStringProperty"] );
 
 // A function that creates contents for a new Fluent file, which will be needed if any string changes.
 const createFluentFile = (): string => {
@@ -46,8 +54,8 @@ const ChainsFluent = {
   plainStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'plainString' ),
   multilineStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'multilineString' ),
   htmlStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'htmlString' ),
-  patternStringStringProperty: ChainsStrings.patternStringStringProperty,
-  namedPlaceholdersStringStringProperty: ChainsStrings.namedPlaceholdersStringStringProperty,
+  patternStringStringProperty: ChainsStrings?.["patternStringStringProperty"],
+  namedPlaceholdersStringStringProperty: ChainsStrings?.["namedPlaceholdersStringStringProperty"],
   sizeStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'size' ),
   a11y: {
     nested: {
