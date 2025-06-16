@@ -50,21 +50,21 @@ const fluentSupport = new FluentContainer( createFluentFile, Array.from(fluentKe
 
 const ChainsFluent = {
   chains: {
-    titleStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'chains_title', _.get( ChainsStrings, 'chains.titleStringProperty' )  )
+    titleStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'chains_title', _.get( ChainsStrings, 'chains.titleStringProperty' ) )
   },
-  plainStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'plainString', _.get( ChainsStrings, 'plainStringStringProperty' )  ),
-  multilineStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'multilineString', _.get( ChainsStrings, 'multilineStringStringProperty' )  ),
-  htmlStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'htmlString', _.get( ChainsStrings, 'htmlStringStringProperty' )  ),
-  patternStringStringProperty: _.get( ChainsStrings, 'patternStringStringProperty' ),
-  namedPlaceholdersStringStringProperty: _.get( ChainsStrings, 'namedPlaceholdersStringStringProperty' ),
-  sizeStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'size', _.get( ChainsStrings, 'sizeStringProperty' )  ),
+  plainStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'plainString', _.get( ChainsStrings, 'plainStringStringProperty' ) ),
+  multilineStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'multilineString', _.get( ChainsStrings, 'multilineStringStringProperty' ) ),
+  htmlStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'htmlString', _.get( ChainsStrings, 'htmlStringStringProperty' ) ),
+  patternStringStringProperty: _.get( ChainsStrings, 'patternStringStringProperty' ) ,
+  namedPlaceholdersStringStringProperty: _.get( ChainsStrings, 'namedPlaceholdersStringStringProperty' ) ,
+  sizeStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'size', _.get( ChainsStrings, 'sizeStringProperty' ) ),
   a11y: {
     nested: {
-      constantStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_constant', _.get( ChainsStrings, 'a11y.nested.constantStringProperty' )  ),
-      fluentReferenceStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_fluentReference', _.get( ChainsStrings, 'a11y.nested.fluentReferenceStringProperty' )  ),
-      fluentVariable: new FluentPattern<{ variable: FluentVariable }>( fluentSupport.bundleProperty, 'a11y_nested_fluentVariable' ),
-      selector: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_selector' ),
-      cascade: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_cascade' )
+      constantStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_constant', _.get( ChainsStrings, 'a11y.nested.constantStringProperty' ) ),
+      fluentReferenceStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_fluentReference', _.get( ChainsStrings, 'a11y.nested.fluentReferenceStringProperty' ) ),
+      fluentVariable: new FluentPattern<{ variable: FluentVariable }>( fluentSupport.bundleProperty, 'a11y_nested_fluentVariable', _.get( ChainsStrings, 'a11y.nested.fluentVariableStringProperty' ) ),
+      selector: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_selector', _.get( ChainsStrings, 'a11y.nested.selectorStringProperty' ) ),
+      cascade: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_cascade', _.get( ChainsStrings, 'a11y.nested.cascadeStringProperty' ) )
     }
   }
 };
