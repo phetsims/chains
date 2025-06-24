@@ -10,6 +10,7 @@ import type { FluentVariable } from '../../chipper/js/browser/FluentPattern.js';
 import FluentPattern from '../../chipper/js/browser/FluentPattern.js';
 import FluentContainer from '../../chipper/js/browser/FluentContainer.js';
 import FluentConstant from '../../chipper/js/browser/FluentConstant.js';
+import FluentComment from '../../chipper/js/browser/FluentComment.js';
 import chains from './chains.js';
 import ChainsStrings from './ChainsStrings.js';
 
@@ -55,16 +56,16 @@ const ChainsFluent = {
   plainStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'plainString', _.get( ChainsStrings, 'plainStringStringProperty' ) ),
   multilineStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'multilineString', _.get( ChainsStrings, 'multilineStringStringProperty' ) ),
   htmlStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'htmlString', _.get( ChainsStrings, 'htmlStringStringProperty' ) ),
-  patternStringStringProperty: _.get( ChainsStrings, 'patternStringStringProperty' ) ,
-  namedPlaceholdersStringStringProperty: _.get( ChainsStrings, 'namedPlaceholdersStringStringProperty' ) ,
+  patternStringStringProperty: _.get( ChainsStrings, 'patternStringStringProperty' ),
+  namedPlaceholdersStringStringProperty: _.get( ChainsStrings, 'namedPlaceholdersStringStringProperty' ),
   sizeStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'size', _.get( ChainsStrings, 'sizeStringProperty' ) ),
   a11y: {
     nested: {
       constantStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_constant', _.get( ChainsStrings, 'a11y.nested.constantStringProperty' ) ),
       fluentReferenceStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_fluentReference', _.get( ChainsStrings, 'a11y.nested.fluentReferenceStringProperty' ) ),
-      fluentVariable: new FluentPattern<{ variable: FluentVariable }>( fluentSupport.bundleProperty, 'a11y_nested_fluentVariable', _.get( ChainsStrings, 'a11y.nested.fluentVariableStringProperty' ) ),
-      selector: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_selector', _.get( ChainsStrings, 'a11y.nested.selectorStringProperty' ) ),
-      cascade: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_cascade', _.get( ChainsStrings, 'a11y.nested.cascadeStringProperty' ) )
+      fluentVariable: new FluentPattern<{ variable: FluentVariable }>( fluentSupport.bundleProperty, 'a11y_nested_fluentVariable', _.get( ChainsStrings, 'a11y.nested.fluentVariableStringProperty' ), [{"name":"variable"}] ),
+      selector: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_selector', _.get( ChainsStrings, 'a11y.nested.selectorStringProperty' ), [{"name":"activityLevel","variants":["calm","active","activeAndPaused"]}] ),
+      cascade: new FluentPattern<{ activityLevel: 'calm' | 'active' | 'activeAndPaused' | TReadOnlyProperty<'calm' | 'active' | 'activeAndPaused'> }>( fluentSupport.bundleProperty, 'a11y_nested_cascade', _.get( ChainsStrings, 'a11y.nested.cascadeStringProperty' ), [{"name":"activityLevel","variants":["calm","active","activeAndPaused"]}] )
     }
   }
 };
