@@ -32,6 +32,7 @@ addToMapIfDefined( 'plainString', 'plainStringStringProperty' );
 addToMapIfDefined( 'multilineString', 'multilineStringStringProperty' );
 addToMapIfDefined( 'htmlString', 'htmlStringStringProperty' );
 addToMapIfDefined( 'size', 'sizeStringProperty' );
+addToMapIfDefined( 'nestedLevel1_nestedLevel2_message', 'nestedLevel1.nestedLevel2.messageStringProperty' );
 addToMapIfDefined( 'a11y_nested_constant', 'a11y.nested.constantStringProperty' );
 addToMapIfDefined( 'a11y_nested_fluentReference', 'a11y.nested.fluentReferenceStringProperty' );
 addToMapIfDefined( 'a11y_nested_fluentVariable', 'a11y.nested.fluentVariableStringProperty' );
@@ -59,6 +60,11 @@ const ChainsFluent = {
   patternStringStringProperty: _.get( ChainsStrings, 'patternStringStringProperty' ),
   namedPlaceholdersStringStringProperty: _.get( ChainsStrings, 'namedPlaceholdersStringStringProperty' ),
   sizeStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'size', _.get( ChainsStrings, 'sizeStringProperty' ) ),
+  nestedLevel1: {
+    nestedLevel2: {
+      messageStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'nestedLevel1_nestedLevel2_message', _.get( ChainsStrings, 'nestedLevel1.nestedLevel2.messageStringProperty' ) )
+    }
+  },
   a11y: {
     nested: {
       constantStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'a11y_nested_constant', _.get( ChainsStrings, 'a11y.nested.constantStringProperty' ) ),

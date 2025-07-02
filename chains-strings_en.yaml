@@ -5,6 +5,10 @@ htmlString:              Turning left on <i>red</i> is a <b>bold</b> move.
 patternString:           "{0}: {1} {2}"
 namedPlaceholdersString: "{{name}} is traveling at {{speed}} km/hr"
 size:                    Size
+nestedLevel1:
+  nestedLevel2:
+    message:             This is a nested message.
+
 a11y:
   nested:
     constant:        Constant string

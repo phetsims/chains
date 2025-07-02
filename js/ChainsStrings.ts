@@ -21,6 +21,11 @@ type StringsType = {
   'patternStringStringProperty': LocalizedStringProperty;
   'namedPlaceholdersStringStringProperty': LocalizedStringProperty;
   'sizeStringProperty': LocalizedStringProperty;
+  'nestedLevel1': {
+    'nestedLevel2': {
+      'messageStringProperty': LocalizedStringProperty;
+    }
+  };
   'a11y': {
     'nested': {
       'constantStringProperty': LocalizedStringProperty;

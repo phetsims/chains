@@ -21,7 +21,7 @@ import ChainsFluent from '../../ChainsFluent.js';
 import ChainsStrings from '../../ChainsStrings.js';
 
 // constants
-const FONT = new PhetFont( 36 );
+const FONT = new PhetFont( 26 );
 
 class ChainsView extends ScreenView {
 
@@ -67,13 +67,23 @@ class ChainsView extends ScreenView {
           font: FONT,
           tandem: tandem.createTandem( 'patternStringText' )
         } ),
-        new Text( new PatternStringProperty( ChainsStrings.namedPlaceholdersStringStringProperty, {
-          name: 'Alice',
-          speed: '100'
-        } ), {
+        new Text(
+          new PatternStringProperty(
+            ChainsStrings.namedPlaceholdersStringStringProperty,
+            {
+              name: 'Alice',
+              speed: '100'
+            }
+          ),
+          {
+            font: FONT,
+            fill: '#99FFFF',
+            tandem: tandem.createTandem( 'namedPlaceholdersStringText' )
+          }
+        ),
+        new Text( ChainsStrings.nestedLevel1.nestedLevel2.messageStringProperty, {
           font: FONT,
-          fill: '#99FFFF',
-          tandem: tandem.createTandem( 'namedPlaceholdersStringText' )
+          tandem: tandem.createTandem( 'nestedStringText' )
         } ),
         new Text( ChainsFluent.a11y.nested.constantStringProperty, { font: FONT } ),
         new Text( ChainsFluent.a11y.nested.fluentReferenceStringProperty, { font: FONT } ),
