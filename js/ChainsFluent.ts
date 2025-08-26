@@ -43,7 +43,7 @@ addToMapIfDefined( 'a11y_nested_cascade', 'a11y.nested.cascadeStringProperty' );
 const createFluentFile = (): string => {
   let ftl = '';
   for (const [key, stringProperty] of fluentKeyToStringPropertyMap.entries()) {
-    ftl += `${key} = ${stringProperty.value}\n`;
+    ftl += `${key} = ${stringProperty.value.replace('\n','\n ')}\n`;
   }
   return ftl;
 };
