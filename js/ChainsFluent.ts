@@ -52,17 +52,17 @@ const fluentSupport = new FluentContainer( createFluentFile, Array.from(fluentKe
 
 const ChainsFluent = {
   chains: {
-    titleStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'chains_title', _.get( ChainsStrings, 'chains.titleStringProperty' ) )
+    titleStringProperty: _.get( ChainsStrings, 'chains.titleStringProperty' )
   },
-  plainStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'plainString', _.get( ChainsStrings, 'plainStringStringProperty' ) ),
-  multilineStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'multilineString', _.get( ChainsStrings, 'multilineStringStringProperty' ) ),
-  htmlStringStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'htmlString', _.get( ChainsStrings, 'htmlStringStringProperty' ) ),
+  plainStringStringProperty: _.get( ChainsStrings, 'plainStringStringProperty' ),
+  multilineStringStringProperty: _.get( ChainsStrings, 'multilineStringStringProperty' ),
+  htmlStringStringProperty: _.get( ChainsStrings, 'htmlStringStringProperty' ),
   patternStringStringProperty: _.get( ChainsStrings, 'patternStringStringProperty' ),
   namedPlaceholdersStringStringProperty: _.get( ChainsStrings, 'namedPlaceholdersStringStringProperty' ),
-  sizeStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'size', _.get( ChainsStrings, 'sizeStringProperty' ) ),
+  sizeStringProperty: _.get( ChainsStrings, 'sizeStringProperty' ),
   nestedLevel1: {
     nestedLevel2: {
-      messageStringProperty: new FluentConstant( fluentSupport.bundleProperty, 'nestedLevel1_nestedLevel2_message', _.get( ChainsStrings, 'nestedLevel1.nestedLevel2.messageStringProperty' ) )
+      messageStringProperty: _.get( ChainsStrings, 'nestedLevel1.nestedLevel2.messageStringProperty' )
     }
   },
   a11y: {
