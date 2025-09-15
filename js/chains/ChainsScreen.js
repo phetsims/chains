@@ -8,6 +8,7 @@
 
 import Screen from '../../../joist/js/Screen.js';
 import chains from '../chains.js';
+import ChainsStrings from '../ChainsStrings.js';
 import ChainsView from './view/ChainsView.js';
 
 class ChainsScreen extends Screen {
@@ -15,7 +16,8 @@ class ChainsScreen extends Screen {
     super(
       () => {return {};},
       model => new ChainsView( model, tandem.createTandem( 'view' ) ), {
-        tandem: tandem
+        tandem: tandem,
+        name: ChainsStrings.screen.chainsStringProperty
       }
     );
   }

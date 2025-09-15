@@ -15,6 +15,10 @@ type StringsType = {
   'chains': {
     'titleStringProperty': LocalizedStringProperty;
   };
+  'screen': {
+    'chainsStringProperty': LocalizedStringProperty;
+    'directionalStringProperty': LocalizedStringProperty;
+  };
   'plainStringStringProperty': LocalizedStringProperty;
   'multilineStringStringProperty': LocalizedStringProperty;
   'htmlStringStringProperty': LocalizedStringProperty;
@@ -25,6 +29,19 @@ type StringsType = {
     'nestedLevel2': {
       'messageStringProperty': LocalizedStringProperty;
     }
+  };
+  'directional': {
+    'valuePatternStringProperty': LocalizedStringProperty;
+    'valueSignPatternStringProperty': LocalizedStringProperty;
+    'valueUnitsPatternStringProperty': LocalizedStringProperty;
+    'valueSignUnitsPatternStringProperty': LocalizedStringProperty;
+    'signValueCurrencyPatternStringProperty': LocalizedStringProperty;
+    'signCurrencyValuePatternStringProperty': LocalizedStringProperty;
+    'wordEqualsSignCurrencyValuePatternStringProperty': LocalizedStringProperty;
+    'unitsStringProperty': LocalizedStringProperty;
+    'celciusStringProperty': LocalizedStringProperty;
+    'currencyStringProperty': LocalizedStringProperty;
+    'wordStringProperty': LocalizedStringProperty;
   };
   'a11y': {
     'nested': {

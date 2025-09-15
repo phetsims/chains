@@ -1,4 +1,6 @@
 chains.title:            Chains
+screen.chains:           Chains
+screen.directional:      Directional
 plainString:             It's not easy being green.
 multilineString:         Give me a<br>break.
 htmlString:              Turning left on <i>red</i> is a <b>bold</b> move.
@@ -8,6 +10,20 @@ size:                    Size
 nestedLevel1:
   nestedLevel2:
     message:             This is a nested message.
+
+directional:
+  valuePattern:                               "{{value}}"
+  valueSignPattern:                           "{{sign}}{{value}}"
+  valueUnitsPattern:                          "{{value}}{{units}}"
+  valueSignUnitsPattern:                      "{{sign}}{{value}}{{units}}"
+  signValueCurrencyPattern:                   "{{sign}}{{value}}{{currency}}"
+  signCurrencyValuePattern:                   "{{sign}}{{currency}}{{value}}"
+  wordEqualsSignCurrencyValuePattern:         "{{word}}={{sign}}{{currency}}{{value}}"
+  units:                                      km
+  celcius:                                   °C
+  currency:                                   $
+  word:                                       fun
+
 
 a11y:
   nested:

@@ -11,6 +11,7 @@ import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import ChainsScreen from './chains/ChainsScreen.js';
 import ChainsStrings from './ChainsStrings.js';
+import DirectionalScreen from './directional/DirectionalScreen.js';
 
 const chainsTitleStringProperty = ChainsStrings.chains.titleStringProperty;
 
@@ -21,5 +22,9 @@ const simOptions = {
 };
 
 simLauncher.launch( () => {
-  new Sim( chainsTitleStringProperty, [ new ChainsScreen( Tandem.ROOT.createTandem( 'chainsScreen' ) ) ], simOptions ).start();
+  const sim = new Sim( chainsTitleStringProperty, [
+    new ChainsScreen( Tandem.ROOT.createTandem( 'chainsScreen' ) ),
+    new DirectionalScreen( Tandem.ROOT.createTandem( 'directionalScreen' ) )
+  ], simOptions );
+    sim.start();
 } );

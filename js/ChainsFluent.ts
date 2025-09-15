@@ -5,12 +5,11 @@
 /* eslint-disable */
 /* @formatter:off */
 
-import { TReadOnlyProperty } from '../../axon/js/TReadOnlyProperty.js';
-import type { FluentVariable } from '../../chipper/js/browser/FluentPattern.js';
-import FluentPattern from '../../chipper/js/browser/FluentPattern.js';
-import FluentContainer from '../../chipper/js/browser/FluentContainer.js';
+import {TReadOnlyProperty} from '../../axon/js/TReadOnlyProperty.js';
 import FluentConstant from '../../chipper/js/browser/FluentConstant.js';
-import FluentComment from '../../chipper/js/browser/FluentComment.js';
+import FluentContainer from '../../chipper/js/browser/FluentContainer.js';
+import type {FluentVariable} from '../../chipper/js/browser/FluentPattern.js';
+import FluentPattern from '../../chipper/js/browser/FluentPattern.js';
 import chains from './chains.js';
 import ChainsStrings from './ChainsStrings.js';
 
@@ -28,11 +27,17 @@ const addToMapIfDefined = ( key: string, path: string ) => {
 };
 
 addToMapIfDefined( 'chains_title', 'chains.titleStringProperty' );
+addToMapIfDefined( 'screen_chains', 'screen.chainsStringProperty' );
+addToMapIfDefined( 'screen_directional', 'screen.directionalStringProperty' );
 addToMapIfDefined( 'plainString', 'plainStringStringProperty' );
 addToMapIfDefined( 'multilineString', 'multilineStringStringProperty' );
 addToMapIfDefined( 'htmlString', 'htmlStringStringProperty' );
 addToMapIfDefined( 'size', 'sizeStringProperty' );
 addToMapIfDefined( 'nestedLevel1_nestedLevel2_message', 'nestedLevel1.nestedLevel2.messageStringProperty' );
+addToMapIfDefined( 'directional_units', 'directional.unitsStringProperty' );
+addToMapIfDefined( 'directional_celcius', 'directional.celciusStringProperty' );
+addToMapIfDefined( 'directional_currency', 'directional.currencyStringProperty' );
+addToMapIfDefined( 'directional_word', 'directional.wordStringProperty' );
 addToMapIfDefined( 'a11y_nested_constant', 'a11y.nested.constantStringProperty' );
 addToMapIfDefined( 'a11y_nested_fluentReference', 'a11y.nested.fluentReferenceStringProperty' );
 addToMapIfDefined( 'a11y_nested_fluentVariable', 'a11y.nested.fluentVariableStringProperty' );
@@ -54,6 +59,10 @@ const ChainsFluent = {
   chains: {
     titleStringProperty: _.get( ChainsStrings, 'chains.titleStringProperty' )
   },
+  screen: {
+    chainsStringProperty: _.get( ChainsStrings, 'screen.chainsStringProperty' ),
+    directionalStringProperty: _.get( ChainsStrings, 'screen.directionalStringProperty' )
+  },
   plainStringStringProperty: _.get( ChainsStrings, 'plainStringStringProperty' ),
   multilineStringStringProperty: _.get( ChainsStrings, 'multilineStringStringProperty' ),
   htmlStringStringProperty: _.get( ChainsStrings, 'htmlStringStringProperty' ),
@@ -64,6 +73,19 @@ const ChainsFluent = {
     nestedLevel2: {
       messageStringProperty: _.get( ChainsStrings, 'nestedLevel1.nestedLevel2.messageStringProperty' )
     }
+  },
+  directional: {
+    valuePatternStringProperty: _.get( ChainsStrings, 'directional.valuePatternStringProperty' ),
+    valueSignPatternStringProperty: _.get( ChainsStrings, 'directional.valueSignPatternStringProperty' ),
+    valueUnitsPatternStringProperty: _.get( ChainsStrings, 'directional.valueUnitsPatternStringProperty' ),
+    valueSignUnitsPatternStringProperty: _.get( ChainsStrings, 'directional.valueSignUnitsPatternStringProperty' ),
+    signValueCurrencyPatternStringProperty: _.get( ChainsStrings, 'directional.signValueCurrencyPatternStringProperty' ),
+    signCurrencyValuePatternStringProperty: _.get( ChainsStrings, 'directional.signCurrencyValuePatternStringProperty' ),
+    wordEqualsSignCurrencyValuePatternStringProperty: _.get( ChainsStrings, 'directional.wordEqualsSignCurrencyValuePatternStringProperty' ),
+    unitsStringProperty: _.get( ChainsStrings, 'directional.unitsStringProperty' ),
+    celciusStringProperty: _.get( ChainsStrings, 'directional.celciusStringProperty' ),
+    currencyStringProperty: _.get( ChainsStrings, 'directional.currencyStringProperty' ),
+    wordStringProperty: _.get( ChainsStrings, 'directional.wordStringProperty' )
   },
   a11y: {
     nested: {
