@@ -17,6 +17,7 @@ import NumberControl from '../../../../scenery-phet/js/NumberControl.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import VBox from '../../../../scenery/js/layout/nodes/VBox.js';
 import RichText from '../../../../scenery/js/nodes/RichText.js';
+import Tandem from '../../../../tandem/js/Tandem.js';
 import chains from '../../chains.js';
 import ChainsStrings from '../../ChainsStrings.js';
 
@@ -90,7 +91,7 @@ class DirectionalView extends ScreenView {
       align: 'left',
       spacing: 25,
       children: [
-        new NumberControl( 'value', numberProperty, new Range( -5, 5 ) ),
+        new NumberControl( 'value', numberProperty, new Range( -5, 5 ), { tandem: Tandem.OPT_OUT } ),
         ..._.map( filledPatternStringProperties, patternProperty => new RichText( patternProperty, textOptions ) )
       ],
       center: this.layoutBounds.center
