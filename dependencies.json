@@ -1,5 +1,5 @@
 {
-  "comment": "# chains 1.53.0-rc.1 Tue Sep 16 2025 14:00:33 GMT-0500 (Colombia Standard Time)",
+  "comment": "# chains 1.53.0 Tue Sep 16 2025 14:40:33 GMT-0500 (Colombia Standard Time)",
   "assert": {
     "sha": "1a4637cfff70e7e8b0844dc43848a86ae89b4cf5",
     "branch": "HEAD"
@@ -13,7 +13,7 @@
     "branch": "HEAD"
   },
   "chains": {
-    "sha": "1a125354d4684a6bd922c47f090790f688251b25",
+    "sha": "a2aa8a111b6e490122f52fc1152f9c9fc0535eed",
     "branch": "1.53"
   },
   "chipper": {
