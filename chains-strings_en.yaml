@@ -14,11 +14,11 @@ nestedLevel1:
 directional:
   valuePattern:                               "{{value}}"
   valueSignPattern:                           "{{sign}}{{value}}"
-  valueUnitsPattern:                          "{{value}}{{units}}"
-  valueSignUnitsPattern:                      "{{sign}}{{value}}{{units}}"
+  valueUnitsPattern:                          "{{value}} {{units}}"
+  valueSignUnitsPattern:                      "{{sign}}{{value}} {{units}}"
   signValueCurrencyPattern:                   "{{sign}}{{value}}{{currency}}"
   signCurrencyValuePattern:                   "{{sign}}{{currency}}{{value}}"
-  wordEqualsSignCurrencyValuePattern:         "{{word}}={{sign}}{{currency}}{{value}}"
+  wordEqualsSignCurrencyValuePattern:         "{{word}} = {{sign}}{{currency}}{{value}}"
   units:                                      km
   celcius:                                   °C
   currency:                                   $
