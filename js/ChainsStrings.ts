@@ -37,6 +37,8 @@ type StringsType = {
     'valueSignUnitsPatternStringProperty': LocalizedStringProperty;
     'signValueCurrencyPatternStringProperty': LocalizedStringProperty;
     'signCurrencyValuePatternStringProperty': LocalizedStringProperty;
+    'wordParenthesesColonValuePatternStringProperty': LocalizedStringProperty;
+    'subscriptsAndSuperscriptsPatternStringProperty': LocalizedStringProperty;
     'wordEqualsSignCurrencyValuePatternStringProperty': LocalizedStringProperty;
     'unitsStringProperty': LocalizedStringProperty;
     'celciusStringProperty': LocalizedStringProperty;

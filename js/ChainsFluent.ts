@@ -5,12 +5,11 @@
 /* eslint-disable */
 /* @formatter:off */
 
-import { TReadOnlyProperty } from '../../axon/js/TReadOnlyProperty.js';
-import type { FluentVariable } from '../../chipper/js/browser/FluentPattern.js';
-import FluentPattern from '../../chipper/js/browser/FluentPattern.js';
-import FluentContainer from '../../chipper/js/browser/FluentContainer.js';
+import {TReadOnlyProperty} from '../../axon/js/TReadOnlyProperty.js';
 import FluentConstant from '../../chipper/js/browser/FluentConstant.js';
-import FluentComment from '../../chipper/js/browser/FluentComment.js';
+import FluentContainer from '../../chipper/js/browser/FluentContainer.js';
+import type {FluentVariable} from '../../chipper/js/browser/FluentPattern.js';
+import FluentPattern from '../../chipper/js/browser/FluentPattern.js';
 import chains from './chains.js';
 import ChainsStrings from './ChainsStrings.js';
 
@@ -82,6 +81,8 @@ const ChainsFluent = {
     valueSignUnitsPatternStringProperty: _.get( ChainsStrings, 'directional.valueSignUnitsPatternStringProperty' ),
     signValueCurrencyPatternStringProperty: _.get( ChainsStrings, 'directional.signValueCurrencyPatternStringProperty' ),
     signCurrencyValuePatternStringProperty: _.get( ChainsStrings, 'directional.signCurrencyValuePatternStringProperty' ),
+    wordParenthesesColonValuePatternStringProperty: _.get( ChainsStrings, 'directional.wordParenthesesColonValuePatternStringProperty' ),
+    subscriptsAndSuperscriptsPatternStringProperty: _.get( ChainsStrings, 'directional.subscriptsAndSuperscriptsPatternStringProperty' ),
     wordEqualsSignCurrencyValuePatternStringProperty: _.get( ChainsStrings, 'directional.wordEqualsSignCurrencyValuePatternStringProperty' ),
     unitsStringProperty: _.get( ChainsStrings, 'directional.unitsStringProperty' ),
     celciusStringProperty: _.get( ChainsStrings, 'directional.celciusStringProperty' ),

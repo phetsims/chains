@@ -18,6 +18,8 @@ directional:
   valueSignUnitsPattern:                      "{{sign}}{{value}} {{units}}"
   signValueCurrencyPattern:                   "{{sign}}{{value}}{{currency}}"
   signCurrencyValuePattern:                   "{{sign}}{{currency}}{{value}}"
+  wordParenthesesColonValuePattern:           "{{word}} ({{units}}): {{value}}"
+  subscriptsAndSuperscriptsPattern:           "{{units}}<sup>{{value}}</sup> + {{units}}<sub>{{value}}</sub>"
   wordEqualsSignCurrencyValuePattern:         "{{word}} = {{sign}}{{currency}}{{value}}"
   units:                                      km
   celcius:                                   °C
