@@ -13,9 +13,7 @@
     "requirejsNamespace": "CHAINS",
     "runnable": true,
     "supportedBrands": [
-      "phet",
-      "phet-io",
-      "adapted-from-phet"
+      "phet"
     ],
     "simulation": true,
     "ignoreForAutomatedMaintenanceReleases": true,
