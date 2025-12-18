@@ -12,7 +12,7 @@ import ScreenView from '../../../../joist/js/ScreenView.js';
 import StringUtils from '../../../../phetcommon/js/util/StringUtils.js';
 import ResetAllButton from '../../../../scenery-phet/js/buttons/ResetAllButton.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
-import SceneryPhetStrings from '../../../../scenery-phet/js/SceneryPhetStrings.js';
+import SceneryPhetFluent from '../../../../scenery-phet/js/SceneryPhetFluent.js';
 import VBox from '../../../../scenery/js/layout/nodes/VBox.js';
 import RichText from '../../../../scenery/js/nodes/RichText.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
@@ -36,7 +36,7 @@ class ChainsView extends ScreenView {
     } );
 
     const sizeStringProperty = new DerivedProperty(
-      [ ChainsStrings.patternStringStringProperty, ChainsStrings.sizeStringProperty, SceneryPhetStrings.units_nmStringProperty ],
+      [ ChainsStrings.patternStringStringProperty, ChainsStrings.sizeStringProperty, SceneryPhetFluent.units_nmStringProperty ],
       ( pattern, sizeString, unitsString ) => StringUtils.format( pattern, sizeString, 8, unitsString )
     );
 
