@@ -16,7 +16,6 @@ import SceneryPhetFluent from '../../../../scenery-phet/js/SceneryPhetFluent.js'
 import VBox from '../../../../scenery/js/layout/nodes/VBox.js';
 import RichText from '../../../../scenery/js/nodes/RichText.js';
 import Text from '../../../../scenery/js/nodes/Text.js';
-import chains from '../../chains.js';
 import ChainsFluent from '../../ChainsFluent.js';
 import ChainsStrings from '../../ChainsStrings.js';
 
@@ -103,5 +102,4 @@ class ChainsView extends ScreenView {
   }
 }
 
-chains.register( 'ChainsView', ChainsView );
 export default ChainsView;

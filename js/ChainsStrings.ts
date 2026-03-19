@@ -58,6 +58,4 @@ type StringsType = {
 
 const ChainsStrings = getStringModule( 'CHAINS' ) as StringsType;
 
-chains.register( 'ChainsStrings', ChainsStrings );
-
 export default ChainsStrings;

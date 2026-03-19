@@ -7,7 +7,6 @@
  */
 
 import Screen from '../../../joist/js/Screen.js';
-import chains from '../chains.js';
 import ChainsStrings from '../ChainsStrings.js';
 import DirectionalView from './view/DirectionalView.js';
 
@@ -23,5 +22,4 @@ class DirectionalScreen extends Screen {
   }
 }
 
-chains.register( 'DirectionalScreen', DirectionalScreen );
 export default DirectionalScreen;

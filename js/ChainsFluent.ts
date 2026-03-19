@@ -102,5 +102,3 @@ const ChainsFluent = {
 };
 
 export default ChainsFluent;
-
-chains.register('ChainsFluent', ChainsFluent);

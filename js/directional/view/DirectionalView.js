@@ -20,7 +20,6 @@ import HBox from '../../../../scenery/js/layout/nodes/HBox.js';
 import VBox from '../../../../scenery/js/layout/nodes/VBox.js';
 import RichText from '../../../../scenery/js/nodes/RichText.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import chains from '../../chains.js';
 import ChainsStrings from '../../ChainsStrings.js';
 
 // constants
@@ -154,5 +153,4 @@ class DirectionalView extends ScreenView {
   }
 }
 
-chains.register( 'DirectionalView', DirectionalView );
 export default DirectionalView;

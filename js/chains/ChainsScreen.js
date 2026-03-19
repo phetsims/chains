@@ -7,7 +7,6 @@
  */
 
 import Screen from '../../../joist/js/Screen.js';
-import chains from '../chains.js';
 import ChainsStrings from '../ChainsStrings.js';
 import ChainsView from './view/ChainsView.js';
 
@@ -23,5 +22,4 @@ class ChainsScreen extends Screen {
   }
 }
 
-chains.register( 'ChainsScreen', ChainsScreen );
 export default ChainsScreen;
